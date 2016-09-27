@@ -21,4 +21,4 @@ Hub project for students home tasks that they are doing and pushing to this proj
     ```
     $ make homeworks-skeleton
     ```
-1. Directory `students` is created with _groups' sub-folders_ and _skeleton file_ for each student 
+1. Directory `students` is created with _groups' sub-folders_ and dedicated folder for each student with greetings script 
