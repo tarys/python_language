@@ -14,5 +14,6 @@ with open('students.yml', 'r') as students_list_file:
             file_name = student_directory + '/welcome.py'
             if not os.path.isfile(file_name):
                 file = open(file_name, "w")
-                file.write('print(\'Welcome aboard, {}!\')\n'.format(student.split('_')[1]))
+                student_name = student.split('_')[1]
+                file.write('print(\'Welcome aboard, {}!\')\n'.format(student_name))
                 file.close()
