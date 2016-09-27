@@ -10,9 +10,13 @@ for group in students['groups']:
         os.makedirs(directory)
 
     for student in students['groups'][group]:
-        file_name = directory + '/' + student + ".py"
+        student_directory = directory + '/' + student
+
+        if not os.path.isdir(student_directory):
+            os.makedirs(student_directory)
+
+        file_name = student_directory + '/' + student + ".py"
         if not os.path.isfile(file_name):
             file = open(file_name, "w")
-            for i in range(10):
-                file.write('def homework_{number}():\n    print(\'put your code here\')\n\n\n'.format(number=i+1))
+            file.write('print(\'Welcome aboard, {}!\')\n'.format(student.split('_')[1]))
             file.close()
