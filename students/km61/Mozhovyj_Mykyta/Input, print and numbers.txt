@@ -1,0 +1,49 @@
+«Sum of three numbers»
+#Program calculate sum of three numbers
+sum=0
+number=int(input('Enter first number'))                                                                                                                       
+sum+=number
+number=int(input('Enter second number'))
+sum+=number
+number=int(input('Enter third number'))
+sum+=number
+print('Sum of three numbers=',sum)
+«Area of a right triangle»
+#Program calculates area of a right triangle
+first_cathetus=float(input('Enter first cathetus'))
+second_cathetus=float(input('Enter second cathetus'))
+print('Area of triangle=',second_cathetus*first_cathetus/2)
+
+«Apple sharing»
+#Program prints amount of apples pupils will get, and amount of apples what will be in a basket
+pupils_amount=int(input('Enter pupils amount'))
+apples_amount=int(input('Enter apples amount'))
+print('Amount of apples pupils will get=',apples_amount//pupils_amount)
+print('Amount of apples what will be in a basket=',apples_amount%pupils_amount)
+
+«Digital clock»
+#Program prints time on clocks after n minutes passed 
+minutes_amount=int(input('Enter amount of passed minutes'))
+minutes_amount=minutes_amount%1440
+print('Time on clocks',minutes_amount//60,minutes_amount%60)
+
+«Hello, Harry!»
+#Program says hello to user 
+user_name=input('Enter your name')
+print("Hello,",user_name+"!")
+
+«Previous and next»
+#Program prints previous and next numbers for entered number
+number=int(input('Enter number'))
+print("The next number for the number",number,"is",str(number+1)+".")
+print("The previous number for the number",number,"is",str(number-1)+".") 
+
+«School desks»
+#Program prints amount of desks needed for entered pupils amount
+pupils_amount=int(input('Enter pupils amount in first form'))
+desk_amount=pupils_amount//2+pupils_amount%2
+pupils_amount=int(input('Enter pupils amount in second form'))
+desk_amount=desk_amount+pupils_amount//2+pupils_amount%2
+pupils_amount=int(input('Enter pupils amount in third form'))
+desk_amount=desk_amount+pupils_amount//2+pupils_amount%2
+print('Needed desk amount='desk_amount)

@@ -1,0 +1,102 @@
+«Series - 1»
+#Program prints numbers from a to b(a>b)
+a=int(input('Enter range start'))
+b=int(input('Enter range end'))
+print('Numbers from',a,'to',b)
+for i in range(a,b+1):
+    print(i)
+
+«Series - 2»
+#Program prints numbers from a to b or from b to a
+a=int(input('Enter range start'))
+b=int(input('Enter range end'))
+print('Numbers from',a,'to',b)
+if a<=b:
+    for i in range(a,b+1):
+        print(i)
+else:
+    for i in range(a,b-1,-1):
+        print(i)
+
+
+
+«Series - 3»
+#Program prints odd numbers from a to b 
+a=int(input('Enter range start'))
+b=int(input('Enter range end'))
+print('Numbers from',a,'to',b)
+for i in range(a,b-1,-1):
+    if i%2!=0:
+        print(i)
+
+«Sum of ten numbers»
+#Program calculates sum of 10 numbers entered by user
+sum=0
+for i in range(10):
+    sum+=int(input('Enter number'))
+print('Sum of 10 number:',sum)
+
+«Sum of  N numbers»
+#Program calculates sum of n numbers entered by user
+sum=0
+n=int(input('Enter amount of numbers'))
+for i in range(n):
+    sum+=int(input('Enter number'))
+print('Sum of n numbers:',sum)
+
+«Sum of  cubes»
+#Program calculates sum of cubes from 1 to n 
+sum=0
+n=int(input('Enter amount of numbers'))
+for i in range(n+1):
+    sum+=i**3
+print('Sum of cubes from 1 to',n,':',sum)
+
+«Factorial»
+#Program calculates factorial of number n 
+n=int(input('Enter number'))
+factorial=1
+for i in range(n):
+    factorial*=i+1
+print('N!=',sum)
+
+«The number of  zeros»
+#Program prints amount of zeros entered by user
+n=int(input('Enter amount of numbers'))
+amount=0
+for i in range(n):
+    x=int(input('Enter number'))
+    if x==0:
+        amount+=1
+print('Amount of zeros',amount)
+
+«The sum of  the factorials»
+#Program calculates sum of the factorials from 1 to n
+n=int(input('Enter number'))
+sum=0
+for i in range(n):
+    fact=1
+    for j in range(i+1):
+        factorial*=j+1
+    sum+=factorial
+print('Sum of factorials from 1 to',n,'=',sum)
+
+«Ladder»
+#Program prints "ladder" of numbers 
+n=int(input('Enter amount of stairs'))
+print('Ladder')
+for i in range(n):
+    for j in range(i+1):
+        print(j+1,end='')
+    print()
+
+«Lost card»
+#Program prints number of lost card, numbers on cards must be from 1 to n
+n=int(input('Enter amount of cards'))
+sum=0 
+needed_sum=0
+for i in range(n-1):
+    sum+=int(input('Enter number on card from 1 to n, without duplicates:'))
+    needed_sum+=i+1
+needed_sum+=n
+print('Lost card',needed_sum-sum)
