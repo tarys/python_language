@@ -1,0 +1,266 @@
+(1)
+#Program that outputs minimal of two numbers inputed by user
+
+
+#input
+First_number = float(input("Enter first real number - "))
+Second_number = float(input("Enter second real number - "))
+
+#main
+if First_number > Second_number:
+    print("Minimal is",Second_number)
+else:
+    print("Minimal is", First_number)
+
+
+
+
+(2)
+#Program that outputs minimal of three numbers inputed by user
+
+#input
+User_1st_number = float(input("Enter first real number - "))
+User_2nd_number = float(input("Enter second real number - "))
+User_3rd_number = float(input("Enter third real number - "))
+
+#main and output
+if User_1st_number <= User_2nd_number and User_1st_number <= User_3rd_number:
+    print("Minimal is",User_1st_number)
+elif User_2nd_number <= User_1st_number and User_2nd_number <= User_3rd_number:
+    print("Minimal is",User_2nd_number)
+else:
+    print("Minimal is",User_3rd_number)
+
+
+
+
+(3)
+#Program that defnes leap year
+#If year is yeap program will print "Leap"
+#Or "COMMON" if it is not
+
+#input
+Year = int(input("Enter a year - "))
+
+#main and outpit
+if Year % 4 == 0 and Year % 100 != 0:
+    print("LEAP")
+elif Year % 400 == 0:
+    print("LEAP")
+else:
+    print("COMMON")
+
+
+
+
+
+(4)
+#Program that outputs result of function sign(x)
+#It will print:
+#0 - if, x = 0
+#1 - if, x > 0
+#and -1 - if, x<0
+
+#input
+User_x = float(input("Enter real number(x) - "))
+
+#main and output
+if User_x > 0:
+    print("sign(x) = 1")
+elif User_x < 0:
+    print("sign(x) = -1")
+else:
+    print("sign(x) = 0")
+
+
+
+
+
+(5)
+#Program that defines equality of three numbers
+#Program will print:
+#3 - if all numbers are equal
+#2 - if at least two of them are equal
+#Or 0 - if they are all different
+
+#input
+User_1st_number = float(input("Enter first real number - "))
+User_2nd_number = float(input("Enter second real number - "))
+User_3rd_number = float(input("Enter third real number - "))
+
+#main and output
+if User_1st_number == User_2nd_number == User_3rd_number:
+    print("3")
+elif User_1st_number == User_2nd_number or User_1st_number == User_3rd_number or User_3rd_number == User_2nd_number:
+    print("2")
+else:
+    print("0")
+
+
+
+
+
+
+(6)
+#Program that defines the rook move is posible or not
+#It will print "YES" if move is posible
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+
+#main and output
+if first_coord_of_first_poss == first_coord_of_second_poss:
+    print("YES")
+elif second_coord_of_first_poss == second_coord_of_second_poss:
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+
+
+(7)
+#Program that defines the bishop move is posible or not
+#It will print "YES" if move is posible
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+
+#main and output
+if abs(first_coord_of_first_poss - first_coord_of_second_poss ) == abs(second_coord_of_first_poss - second_coord_of_second_poss):
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+
+
+(8)
+#Program that defines the king move is posible or not
+#It will print "YES" if move is posible
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+#main and output
+if abs((first_coord_of_first_poss - first_coord_of_second_poss)) == 1 and (second_coord_of_second_poss == second_coord_of_first_poss):
+    print("YES")
+elif abs((second_coord_of_second_poss - second_coord_of_first_poss)) == 1 and (first_coord_of_second_poss == first_coord_of_first_poss):
+    print("YES")
+elif abs((second_coord_of_second_poss - second_coord_of_first_poss)) == 1 and abs((first_coord_of_second_poss - first_coord_of_first_poss)) == 1:
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+(9)
+#Program that defines the queen move is posible or not
+#It will print "YES" if move is posible
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+
+#main and ouput
+if abs(first_coord_of_first_poss - first_coord_of_second_poss ) == abs(second_coord_of_first_poss - second_coord_of_second_poss):
+    print("YES")
+elif first_coord_of_first_poss == first_coord_of_second_poss or second_coord_of_first_poss == second_coord_of_second_poss:
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+
+(10)
+#Program that defines the knight move is posible or not
+#It will print "YES" if move is posible
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+#main and ouput
+if abs(first_coord_of_second_poss - first_coord_of_first_poss) == 1 and abs(second_coord_of_second_poss - second_coord_of_first_poss) == 2:
+    print("YES")
+elif abs(first_coord_of_first_poss - first_coord_of_second_poss) == 2 and abs(second_coord_of_first_poss - second_coord_of_second_poss) == 1:
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+
+
+(11)
+#Program that defines chess cells have the same color or not
+#It will print "YES" if is
+#Or "NO" if it is not
+
+#input
+first_coord_of_first_poss = int(input("Enter first coordinate of first position(1-8) - "))
+second_coord_of_first_poss = int(input("Enter second coordinate of first position(1-8) - "))
+first_coord_of_second_poss = int(input("Enter first coordinate of second position(1-8) - "))
+second_coord_of_second_poss = int(input("Enter second coordinate of second position(1-8) - "))
+
+#main
+if (first_coord_of_first_poss + second_coord_of_first_poss + first_coord_of_second_poss + second_coord_of_second_poss) % 2 == 0:
+    print("YES")
+else:
+    print("NO")
+
+
+
+
+
+
+
+(12)
+#Program determines is it posible to split the cocolate bar(m * n portion) to have exectly k squares
+#Program will print "YES" if it is posible
+#Or "NO" if it is not
+
+#input
+Chocolate_bar_lenght = int(input("Enter quantity of portions(m) - "))
+Chocolate_bar_width = int(input("Enter quantity of portions(n) - "))
+Quantity_k_squares = int(input("Enter quantity of squares(k) you want to split - "))
+
+#main and output
+if (Quantity_k_squares % Chocolate_bar_lenght == 0 or Quantity_k_squares % Chocolate_bar_width == 0) and Quantity_k_squares < Chocolate_bar_width * Chocolate_bar_lenght:
+    print("YES")
+else:
+    print("NO")
