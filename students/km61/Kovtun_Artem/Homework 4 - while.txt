@@ -1,0 +1,463 @@
+(1)
+#Program of fiding the number square which are less lesser than N
+
+#defaults
+Current_number = 1
+Square_of_Curr_Numb = 1
+
+#input
+User_N = int(input("Enter integer number(N): "))
+
+
+#main and output
+while Square_of_Curr_Numb <= User_N:
+    print(Square_of_Curr_Numb," ") 
+    Current_number+=1
+    Square_of_Curr_Numb = Current_number ** 2
+     
+
+
+
+
+
+(2)
+#Program that counts the greatest integer that is a power of two, less or equal than N
+
+#defaults
+power = 1
+two_in_power = 2
+
+#input
+User_N = int(input("Enter integer number: "))
+
+#main
+while 2 * two_in_power <= User_N:
+    two_in_power*=2
+    power+1
+
+#output
+print(power,two_in_power)
+
+
+
+
+
+
+
+(3)
+#Program of finding the minimal devider of int number - N
+
+#defaults
+min_devider = 2
+
+#input
+User_N = int(input("Enter integer number(N): "))
+
+#main
+while User_N % min_devider !=0:
+    min_devider+=1
+
+#output
+print("Minimal devider for",User_N,"is", min_devider)
+
+
+
+
+
+(4)
+#Program that counts how many year need to raise your money based on inputed percents
+
+#defaults
+years = 0
+
+#input
+money_deposit = float(input("Enter real number(deposit) - "))
+bank_percentes = int(input("Enter integer number(1-100)(bank percents) - "))
+money_to_get = float(input("Enter quantity of money you want to get - "))
+
+#main
+while money_to_get > money_deposit:
+    money_deposit+=money_deposit * bank_percentes/100
+    money_deposit = int(money_deposit * 100)
+    money_deposit = float(money_deposit / 100)
+    years+=1
+
+#output
+print("Year you need to wait -",years)
+
+
+
+
+
+
+
+(5)
+#Program that determines the number of the day on which the mileage of the athlete will be not less than y miles.
+
+#defaults
+days = 1
+
+#input
+User_km= float(input("Enter real number(kilometrs at first day): "))
+User_km_mileage = float(input("Enter real number(mileage): "))
+
+#main
+while User_km < User_km_mileage:
+    User_km+=User_km*0.1
+    days+=1
+
+#output
+print(days)
+
+
+
+
+
+(6)
+#Program that determines sum of the sequence
+
+#defaults
+sequence_sum = 0
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    else:
+        sequence_sum+=User_number
+
+print("Sum of the sequence is",sequence_sum)
+
+
+
+
+
+(7)
+#Program that determines the largest element of the sequence
+
+#defaults
+max_of_secuence = float("-inf")
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    elif User_number > max_of_secuence:
+        max_of_secuence = User_number
+
+#output
+print("The largest element of the sequence is",max_of_secuence)
+
+
+
+
+
+
+(8)
+#Program that determines how many elements of this sequence are equal to its largest element.
+
+#defaults
+max_of_secuence = float("-inf")
+quantity_of_equals = 1
+
+#input and main
+print("Program that determines how many elements of this sequence are equal to its largest element.")
+print("")
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    elif User_number > max_of_secuence:
+        max_of_secuence = User_number
+        quantity_of_equals = 1
+    elif User_number == max_of_secuence:
+        quantity_of_equals+=1
+
+
+#output
+print("The number of equal elements too the largest one -",quantity_of_equals)
+
+
+
+
+
+
+
+(9)
+#Program that determines the number of even elements in the sequence
+
+#defaults
+quantity_even_numbers = 0
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    elif User_number % 2 == 0:
+        quantity_even_numbers+=1
+
+#output
+print("The number of even elements in the sequence - ",quantity_even_numbers)
+
+
+
+
+
+
+
+
+(10)
+#Program that determines the index of largest element of the sequence
+
+#defaults
+max_index = 0
+quantity_of_repeats = 0
+max_of_secuence = float("-inf")
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    elif User_number > max_of_secuence:
+        max_of_secuence = User_number
+        max_index = quantity_of_repeats
+        quantity_of_repeats += 1
+    else:
+        quantity_of_repeats+=1
+
+print("The index of largest element is",max_index)
+
+
+
+
+
+
+
+
+(11)
+# Program that determines the second largest element of the sequence
+
+# defaults
+first_max = float("-inf")
+second_max = 0
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    elif User_number > first_max:
+        second_max = first_max
+        first_max = User_number
+    elif User_number < first_max and User_number > second_max:
+        second_max = User_number
+
+#output
+print(first_max)
+print("The second largest element of the sequence is",second_max)
+
+
+
+
+
+
+
+
+(12)
+#Program that counts the average of the sequence
+
+#defaults
+quantity_of_repeats = 0
+sum_sequence = 0
+
+#main and input
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    else:
+        sum_sequence+=User_number
+        quantity_of_repeats+=1
+
+Average = sum_sequence / quantity_of_repeats
+
+
+#output
+print("The average of the sequence is",Average)
+
+
+
+
+
+
+
+
+(13)
+#Program that defines nth Fibonacci number for the given number by user
+
+#defaults
+current_number = 0
+next_number = 1
+position = 0
+
+#input
+User_N = int(input("Enter integer number(N) - "))
+
+#main
+while User_N != position:
+    current_number,next_number = next_number,current_number+next_number
+    position+=1
+
+#output
+print("The Fibinacci's number by number",User_N,"is",current_number)
+
+
+
+
+
+
+
+
+(14)
+#Progarm that defines whether user's inputed N belongs to the Fibonacci numbers
+#Program will print Fibbonacci number if it belongs
+#Or -1 if it is not
+
+#defaults
+current_number=0
+next_number=1
+position=1;
+
+ #input
+User_N=int(input("Enter integer number(N) - "))
+
+#main
+while User_N > current_number:
+    current_number, next_number = next_number, current_number + next_number
+    position+=1
+if User_N == current_number:
+    pass
+else:
+    position = 0
+
+#ouput
+print(position-1)
+
+
+
+
+
+
+
+
+
+(15)
+#Program that determines how many elements of this sequence are greater than their neighbours above
+
+#defaults
+current_number = 0
+previous_number = float("inf")
+quantity_of_greater_numbers = 0
+
+#input and main
+while True:
+    current_number = int(input("Enter integer - "))
+    if current_number == 0:
+        break
+    elif current_number > previous_number:
+        quantity_of_greater_numbers+=1
+        previous_number = current_number
+    else:
+        previous_number = current_number
+
+print("The number of elements of this sequence which are greater then their neighbours above -",quantity_of_greater_numbers)
+
+
+
+
+
+
+
+
+(16)
+#Progarm that counts lenght of the sequence of non-negative integers
+
+#defaults
+lenght_of_sequence = 0
+
+#input and main
+while True:
+    User_number = int(input("Enter integer - "))
+    if User_number == 0:
+        break
+    else:
+        lenght_of_sequence+=1
+
+#output
+print("Lenght of sequence is",lenght_of_sequence)
+
+
+
+
+
+
+
+
+(17)
+#Progarm that determines the length of the widest fragment where all the elements are equal to each other
+
+#defaults
+quantity_of_equal = 1
+max_of_equal = 1
+User_N = int(input("Enter integer - "))
+while User_N != 0:
+    previous_number = User_N
+    User_N = int(input("Enter integer - "))
+    if User_N == previous_number:
+        quantity_of_equal+=1
+    elif quantity_of_equal>max_of_equal:
+        max_of_equal = quantity_of_equal
+        quantity_of_equal = 1
+    else:
+        quantity_of_equal = 1
+
+#output
+print("The length of the widest fragment where all the elements are equal to each other is", max_of_equal)
+
+
+
+
+
+
+
+
+(18)
+#Program that defines standart deviation
+import math
+
+#input
+User_N = int(input("Enter integer - "))
+
+#defaults
+quantity_of_repeats = 1
+Sum = User_N
+result = 0
+square_sum = User_N * User_N
+
+#main
+while User_N != 0:
+    User_N = int(input("Enter integer - "))
+    quantity_of_repeats+=1
+    Sum+=User_N
+    square_sum+=User_N * User_N
+quantity_of_repeats-=1
+formul_s = Sum / quantity_of_repeats
+result = math.sqrt((square_sum - 2 * formul_s * Sum + quantity_of_repeats * formul_s * formul_s)/(quantity_of_repeats-1))
+
+
+#output
+print("Standart devaition is",result)
