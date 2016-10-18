@@ -7,24 +7,23 @@ n=int(input('Enter number'))
 factorial=1
 for i in range(n):
     factorial*=i+1
-print('N!=',sum)
+print('N!=',factorial)
 
 #-----------------------------------------------------------------
 
 
 #task2------------------------------------------------------------
 """
-По данному натуральном nn вычислите сумму 1!+2!+3!+...+n!1!+2!+3!+...+n!.
+По данному натуральном nn вычислите сумму 1!+2!+3!+...+n!.
 Пользоваться математической библиотекой math в этой задаче запрещено.
 
 """
 #Program calculates sum of the factorials from 1 to n
 n=int(input('Enter number'))
+factorial=1
 sum=0
 for i in range(n):
-    fact=1
-    for j in range(i+1):
-        factorial*=j+1
+    factorial*=j+1
     sum+=factorial
 print('Sum of factorials from 1 to',n,'=',sum)
 
