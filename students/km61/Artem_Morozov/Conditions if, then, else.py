@@ -5,7 +5,7 @@
  #Program prints minimum of two numbers
  a=int(input('Enter first number'))
  b=int(input('Enter second number'))
- if first_number>second_number:
+ if a>b:
     print('Minimum:',b)
  else:
     print('Minimum:',a)
@@ -35,15 +35,15 @@
  Выведите значение наименьшего из них.
  """
  #Program prints minimum of three numbers
- first_number=int(input('Enter first number'))
- second_number=int(input('Enter second number'))
- third_number=int(input('Enter third number'))
- if (first_number<second_number) and (first_number<third_number):
-    print('Minimum of three numbers:',first_number)
- elif (second_number<first_number) and (second_number<third_number):
-    print('Minimum of three numbers:',second_number)
+ a=int(input('Enter first number'))
+ b=int(input('Enter second number'))
+ c=int(input('Enter third number'))
+ if (a<b) and (a<c):
+    print('Minimum of three numbers:',a)
+ elif (b<a) and (b<c):
+    print('Minimum of three numbers:',b)
  else:
-    print('Minimum of three numbers:',third_number)
+    print('Minimum of three numbers:',c)
  
  
  #-----------------------------------------------------------------
@@ -77,12 +77,12 @@
  """
  
  #Program prints amount of equal numbers 
- first_number=int(input('Enter first number'))
- second_number=int(input('Enter second number'))
- third_number=int(input('Enter third number'))
- if first_number==second_number and second_number==third_number:
+ a=int(input('Enter first number'))
+ b=int(input('Enter second number'))
+ c=int(input('Enter third number'))
+ if a==b and b==c:
     print("Amount of equal numbers is 3")
- elif first_number==second_number or second_number==third_number or first_number==third_number_number:
+ elif a==b or b==c or a==c:
     print("Amount of equal numbers is 2")
  else:
     print("Amount of equal numbers is 0")
@@ -99,14 +99,14 @@
  """
  
  #Program prints "YES" if rock can move to entered coordinats, and "NO" if can't
- rook_first_cordinat=int(input('Enter rook first cordinat'))
- rook_second_cordinat=int(input('Enter rook second cordinat'))
- square_first_cordinat=int(input('Enter square first cordinat'))
- square_second_cordinat=int(input('Enter square second cordinat'))
- if rook_first_cordinat==square_first_cordinat or rook_second_cordinat==square_second_cordinat:
- 	print("YES")
- else:
-     print("NO")
+ x1 = int(input())
+ y1 = int(input())
+ x2 = int(input())
+ y2= int(input())
+ if y1==y2 or x1==x2:
+     print('YES')
+ else: 
+     print('NO')
  
  #-----------------------------------------------------------------
  
@@ -118,14 +118,14 @@
  Программа получает на вход четыре числа от 1 до 8 каждое, задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.
  """
  #Program prints "YES" if two chess cells have the same color, or "NO" if have not 
- first_cordinat_first_cell=int(input('Enter first cordinat first cell'))
- second_cordinat_first_cell=int(input('Enter second cordinat first cell'))
- first_cordinat_second_cell=int(input('Enter first cordinat second cell'))
- second_cordinat_second_cell=int(input('Enter second cordinat second cell'))
- if (first_cordinat_first_cell+second_cordinat_first_cell)%2==(first_cordinat_second_cell+second_cordinat_second_cell)%2:
-     print("YES")
+ x1 = int(input(Введите х1))
+ y1 = int(input(Введите х2))
+ x2 = int(input(Введите у1))
+ y2 = int(input(Введите у2))
+ if (x1 + y1 + x2 + y2) % 2 == 0:
+     print('YES')
  else:
-     print("NO")
+     print('NO')
  
  
  #-----------------------------------------------------------------
@@ -139,15 +139,18 @@
  Программа должна вывести YES, если из первой клетки ходом короля можно попасть во вторую или NO в противном случае.
  """
  #Program prints "YES" if king can move to cell, or "NO" if he can't
- kings_first_cordinat=int(input('Enter kings first cordinat'))
- kings_second_cordinat=int(input('Enter kings second cordinat'))
- square_first_cordinat=int(input('Enter square first cordinat'))
- square_second_cordinat=int(input('Enter square second cordinat'))
- if abs(square_first_cordinat-kings_first_cordinat)<=1 and abs(square_second_cordinat-kings_second_cordinat)<=1:
-     print("YES")
- else:
-     print("NO")
- 
+x1 = int(input(Введите х1))
+y1 = int(input(Введите х2))
+x2 = int(input(Введите у1))
+y2 = int(input(Введите у2))
+if (x1 + y1 + x2 + y2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+ if abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1:
+    print('YES')
+else:
+    print('NO')
  #-----------------------------------------------------------------
  
  
@@ -158,14 +161,18 @@
  """
  
  #Program prints "YES"if bishop can move to cell, and "NO" if he can't
- bishops_first_cordinat=int(input('Enter bishops first cordinat'))
- bishops_second_cordinat=int(input('Enter bishops second cordinat'))
- square_first_cordinat=int(input('Enter square first cordinat'))
- square_second_cordinat=int(input('Enter square second cordinat'))
- if abs(square_first_cordinat-bishops_first_cordinat)==abs(square_second_cordinat-bishops_second_cordinat):
-     print("YES")
- else:
-     print("NO")
+x1 = int(input(Введите х1))
+y1 = int(input(Введите х2))
+x2 = int(input(Введите у1))
+y2 = int(input(Введите у2))
+if (x1 + y1 + x2 + y2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+if abs(y1-y2)==abs(x1-x2):
+    print('YES')
+else:
+    print('NO')
  
  
  #-----------------------------------------------------------------
@@ -176,14 +183,18 @@
  Даны две различные клетки шахматной доски, определите, может ли ферзь попасть с первой клетки на вторую одним ходом.
  """
  #Program prints "YES" if queen can move to cell, and "NO" if she can't
- queens_first_cordinat=int(input('Enter queens first cordinat))
- queens_second_cordinat=int(input('Enter queens second cordinat'))
- square_first_cordinat=int(input('Enter square first cordinat'))
- square_second_cordinat=int(input('Enter square second cordinat'))
- if abs(square_first_cordinat-queens_first_cordinat)==abs(square_second_cordinat-queens_second_cordinat) or queens_first_cordinat==square_first_cordinat or queens_second_cordinat==square_second_cordinat:
-     print("YES")
+x1 = int(input(Введите х1))
+y1 = int(input(Введите х2))
+x2 = int(input(Введите у1))
+y2 = int(input(Введите у2))
+if (x1 + y1 + x2 + y2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+ if x1-x2==0 or y1-y2==0 or abs(y1-y2)==abs(x1-x2):
+    print('YES')
  else:
-     print("NO")
+    print('NO')
  
  #-----------------------------------------------------------------
  
@@ -194,16 +205,18 @@
   Даны две различные клетки шахматной доски, определите, может ли конь попасть с первой клетки на вторую одним ходом.
  """
  #Program prints "YES"if knight can move to cell, and "NO" if he can't
- knights_first_cordinat=int(input('Enter knights first cordinat'))
- knights_second_cordinat=int(input('Enter knights second cordinat'))
- square_first_cordinat=int(input('Enter square first cordinat'))
- square_second_cordinat=int(input('Enter square second cordinat'))
- if abs(square_first_cordinat-knights_first_cordinat)==1 and abs(knights_second_cordinat-square_second_cordinat)==2: 
-     print("YES")
- elif abs(square_second_cordinat-knights_second_cordinat)==1 and abs(square_first_cordinat-knights_first_cordinat)==2:
- 	print("YES")
- else:
-     print("NO")
+x1 = int(input(Введите х1))
+y1 = int(input(Введите х2))
+x2 = int(input(Введите у1))
+y2 = int(input(Введите у2))
+if (x1 + y1 + x2 + y2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+if (abs(x1-x2)==1 and abs(y1-y2)==2) or (abs(x1-x2)==2 and abs(y1-y2)==1):
+    print('YES')
+else:
+    print('NO')
  
  #-----------------------------------------------------------------
  
@@ -216,13 +229,12 @@
  Программа получает на вход три числа: n, m, k и должна вывести YES или NO.
  """
  #Program prints "YES" if user can divide chocolate bar into k pieces, or "NO" if he can't
- chocolate_bar_rows_amount=int(input())
- chocolate_bar_cows_amount=int(input())
- k=int(input())
- if k<=chocolate_bar_cows_amount*chocolate_bar_rows_amount and (k%chocolate_bar_cows_amount==0 or k%chocolate_bar_rows_amount==0):
-     print("YES")
- else:
-     print("NO")
- 
+n=int(input())
+m=int(input())
+k=int(input())
+if (k<=n*m) and ((k%n==0) or (k%m==0)):
+    print('YES')
+else:
+    print('NO')
  
  #-----------------------------------------------------------------
