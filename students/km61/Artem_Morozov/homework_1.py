@@ -4,13 +4,10 @@
 """
 #Program calculate sum of three numbers
 sum=0
-number=int(input('Enter first number'))                                                                                                                       
-sum+=number
-number=int(input('Enter second number'))
-sum+=number
-number=int(input('Enter third number'))
-sum+=number
-print('Sum of three numbers=',sum)
+a=int(input('Enter first number'))                                                                                                                       
+b=int(input('Enter second number'))
+c=int(input('Enter third number'))
+print('Sum of three numbers=',a+b+c)
 #-----------------------------------------------------------------
 
 
@@ -50,9 +47,10 @@ print('Amount of apples what will be in a basket=',apples_amount%pupils_amount)
 Учтите, что число n может быть больше, чем количество минут в сутках.
 """
 #Program prints time on clocks after n minutes passed 
-minutes_amount=int(input('Enter amount of passed minutes'))
-minutes_amount=minutes_amount%1440
-print('Time on clocks',minutes_amount//60,minutes_amount%60)
+n = int(input())
+hours = n % (60 * 24) // 60
+minutes = n % 60
+print(hours, minutes)
 
 #-----------------------------------------------------------------
 
