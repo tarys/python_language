@@ -1,0 +1,146 @@
+#Занятие 2. Условная инструкция
+#Задача 1.Минимум из двух чисел
+#Ввод данных
+x = int(input())
+y = int(input())
+#Постановка условия
+if x > y:
+   print(y)
+else:
+    print(x)
+
+#Задача 2.Знак числа  
+#Ввод числа
+x  = int(input())
+#Постановка условия
+if x > 0:
+    print ("1")
+#Постановка альтернативного условия
+elif x < 0:
+    print("-1")
+#Постановка очень альтернативного условия
+else:
+    print("0")
+
+#Задача 3.Високосный год
+#Ввод числа
+a=int(input())
+#Постановка условия
+if a%4==0:
+    print('YES')
+#Постановка альтернативного условия
+else:
+    print('NO')
+
+#Задача 4. «Минимум из трех чисел»
+
+x = int(input())
+y = int(input())
+z = int(input())
+#Постановка условия
+if x > y and z > y:
+    print(y)
+#Постановка еще одного условия
+elif y > x and z > x:
+    print(x)
+#Еще одно условие
+elif y > z and x > z:
+    print(z)
+#И еще одно
+else:
+    print(x)
+
+#Задача 5.«Сколько совпадает чисел»
+#Ввод чисел
+a=int(input())
+b=int(input())
+c=int(input())
+#Постановка первого условия, когда все числа совпадают
+if a==b==c:
+    print('3')
+#Условие, при котором совпадают 2 числа из 3
+elif a==c or a==b or b==c:
+    print('2')
+#Альтернативное условие, когда все три числа разные
+else:
+    print('0')
+
+#Задача 6.«Ход ладьи»
+#Ввод данных
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+#Постановка условия
+if x2==x1+1 and y2==y1+1:
+    print('YES')
+#Постановка альтернативного условия
+else:
+    print('NO')
+
+#Задача 7. «Ход короля»
+#Ввод чисел
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+#Ход по горизонтали или вертикали
+if x2==x1+1 and y2==y1+1:
+    print('YES')
+#Ход по диагонали
+elif x1==y1 and x2==y2 and x2==x1+1 and y2==y2+1:
+    print('YES')
+#Альтернатива
+else:
+    print('NO')
+
+#Задача 8.«Ход слона»
+#Ввод чисел
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+#Постановка условия
+if x1==y1 and x2==y2 and x2==x1+1 and y2==y1+1:
+    print('YES')
+#ВТОРОЕ УСЛОВИЕ
+else:
+    print('NO')
+
+#Задача 9. Ход ферзя
+#Ввод чисел
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+#Постановка условия
+if (abs(x1-x2)==abs(y1-y2)) or ((x1==x2) or (y1==y2)):
+    print("YES")
+#Постановка альтернативного условия
+else:
+    print("NO")
+
+#Задача 10. Ход коня
+#Ввод чисел
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+#Условие
+if (abs(x1-x2)==2 and abs(y1-y2)==1) or (abs(x1-x2)==1 and abs(y1-y2)==2):
+    print("YES")
+#Условие 2
+else:
+    print("NO")
+
+#Задача 11. Шоколадка
+#Ввод данных
+a = int(input())
+n = int(input())
+b = int(input())
+if (b%n==0 or b%a==0) and (b<=a*n):
+    print ("YES")
+else:
+  print ("NO")
+
+  
