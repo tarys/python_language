@@ -60,7 +60,6 @@ for i in range(a,b-1,-2):
 
 
 
-a = int(input())
 sum = 0
 for i in range(10):
     sum += int(input())
