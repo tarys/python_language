@@ -82,7 +82,7 @@ y = float(input(""))
 balance = x
 i = 0
 while balance < y:
-    balance += balance * p/100
+    balance = int(balance*100)/100
     balance = round(balance, 2)
     i += 1
 print(i)
