@@ -15,7 +15,6 @@
     По данному натуральному n вычислите значение n!. Пользоваться математической библиотекой math в этой задаче запрещено.
 """
 
-#print("Task #1")
 def_n = 1 #Default N
 step = 0 #
 n = int(input()) #"Enter N: "
@@ -23,7 +22,6 @@ for i in range(n):
     step += 1
     def_n = def_n * step
 print(def_n)
-#print("First task complited!")
 
 #----------------------------------------------------------#
 
