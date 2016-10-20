@@ -1,0 +1,28 @@
+
+a = int(input( ))
+b = int(input( ))
+c = int(input( ))
+print(a+b+c)
+
+a=int(input( ))0
+b= int(input( ))
+print((a*b)/2)
+
+2.	Ђяблукаї
+N=int(input('вв...студ '))
+K=int(input('вв..€бл '))
+print(divmod(K,N))
+       4.    N=int(input('¬вед≥ть к≥льк≥сть хвилин'))
+               print(divmod(N,60))
+
+         5.   name=input(УEnter your name: Ф)
+ print(УHelloФ, name, Ђ!ї)
+
+         6.   N=int(input(УEnter number У))
+       	 Print(УThe next number for the numberФ, N, УisФ N+1)
+	 Print(УThe previous number for the number N, УisФ N-1)
+
+           7.  a=int(input('¬вед≥ть к≥льк≥сть учн≥в у першому клас≥'))
+  b=int(input('¬вед≥ть к≥льк≥сть учн≥в у другому клас≥'))
+  c=int(input('¬вед≥ть к≥льк≥сть учн≥в у третьому клас≥'))
+  print((a+b+c)/2)
