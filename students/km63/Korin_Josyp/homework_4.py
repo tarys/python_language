@@ -235,18 +235,16 @@ print(second_max)
 числом 0. Определите, сколько элементов этой последовательности 
 равны ее наибольшему элементу.
 """
-first_max = int(input())
-second_max = int(input())
-if first_max < second_max:
-    first_max, second_max = second_max, first_max
-element = int(input())
+maximum = 0
+num_maximal = 0
+element = -1
 while element != 0:
-    if element > first_max:
-        second_max, first_max = first_max, element
-    elif element > second_max:
-        second_max = element
     element = int(input())
-print(second_max)
+    if element > maximum:
+        maximum, num_maximal = element, 1
+    elif element == maximum:
+        num_maximal += 1        
+print(num_maximal)
 #-----------------------------------------------------------------
 
 #task15--------------------------------------------------------
@@ -256,18 +254,15 @@ print(second_max)
 По данному числу n определите n-е число Фибоначчи φn.
 Эту задачу можно решать и циклом for.
 """
+
 n = int(input())
 if n == 0:
     print(0)
 else:
-    f = []
-    f.append(0)
-    f.append(1)
-    i = 2
-    while i<=n:
-        f.append(f[i-1] + f[i-2])
-        i += 1
-    print(f[-1])
+    a, b = 0, 1
+    for i in range(2, n + 1):
+        a, b = b, a + b
+    print(b)
 #-----------------------------------------------------------------
 
 #task16---------------------------------------------------------
@@ -277,19 +272,19 @@ else:
 φn = A. Если А не является числом Фибоначчи, выведите число -1.
 """
 a = int(input())
-f1 = 0
-f2 = 1
-n = 0
-fibo = 0
-while fibo != a:
-    fibo = f1 + f2
-    f2 = f1
-    f1 = fibo
-    n += 1
-    if fibo > a:
-        n = -1
-        break
-print(n)
+if a == 0:
+    print(0)
+else:
+    fib_prev, fib_next = 0, 1
+    n = 1
+    while fib_next <= a:
+        if fib_next == a:
+            print(n)
+            break
+        fib_prev, fib_next = fib_next, fib_prev + fib_next
+        n += 1
+    else:
+        print(-1)
 #-----------------------------------------------------------------
 
 #task17----------------------------------------------------------
@@ -298,26 +293,20 @@ print(n)
 Определите, какое наибольшее число подряд идущих элементов этой
 последовательности равны друг другу.
 """
-i = 0
-max = 0
-n_max = 0
-l = []
-l2 = [0]
-k = 1
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    l.append(n)
-for i in range(1, len(l)):
-    if l[i-1] == l[i]:
-        k += 1
+prev = -1
+curr_rep_len = 0
+max_rep_len = 0
+element = int(input())
+while element != 0:
+    if prev == element:
+        curr_rep_len += 1
     else:
-        l2.append(k)
-        k = 1
-l2.append(k)
-l2.sort()
-print(l2[-1])
+        prev = element
+        max_rep_len = max(max_rep_len, curr_rep_len)
+        curr_rep_len = 1
+    element = int(input())
+max_rep_len = max(max_rep_len, curr_rep_len)
+print(max_rep_len)
 #--------------------------------------------------------------
 
 #task18------------------------------------------------------------
