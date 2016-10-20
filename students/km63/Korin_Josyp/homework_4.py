@@ -215,17 +215,18 @@ print(i)
 последовательности есть хотя бы два элемента.
 """
 #--------------------------------------------------------------
-i = 0
-max = 0
-n_max = 0
-l = []
-while True:
-    n = int(input())
-    l.append(n)
-    if n == 0:
-        break
-l.sort()
-print(l[-2])
+first_max = int(input())
+second_max = int(input())
+if first_max < second_max:
+    first_max, second_max = second_max, first_max
+element = int(input())
+while element != 0:
+    if element > first_max:
+        second_max, first_max = first_max, element
+    elif element > second_max:
+        second_max = element
+    element = int(input())
+print(second_max)
 #-----------------------------------------------------------------
 
 #task14---------------------------------------------------------
