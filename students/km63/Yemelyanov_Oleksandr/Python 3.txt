@@ -1,0 +1,33 @@
+7.факториал:
+fac=1
+n=int(input())
+
+for i in range (1,n+1,1):
+fac=fac*i
+
+print(fac)
+
+8.сумма факториалов
+fac=1 summ=0
+n=int(input())
+
+for i in range(1,n+1):
+fac+fac*i
+summ=summ+fac
+print(summ)
+
+9.количество нулей:
+n=int(input())
+kol=0
+
+for i in range(n):
+num=int(input())
+if num==0:
+kol+=1
+print(kol)
+
+10.Лесенка
+n=int(input())
+	for i in range(n):
+		print(j,end='')
+	print()
