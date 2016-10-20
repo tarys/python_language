@@ -1,0 +1,37 @@
+1:
+a=int(input( ))
+b=int(input( ))
+c=int(input( ))
+print(a+b+c)
+
+2:
+h=int(input( ))
+b=int(input( ))
+print(h*b/2)
+
+3:
+n=int(input( ))
+k=int(input( ))
+print(k//n)
+print(k%n)
+
+4:
+n=int(input( ))
+print((n//60)%24)
+print((n*60))
+
+5:
+Код
+a=input( )
+print("Hello,"+a+"!")
+
+6:
+a=input( )
+print("The_next_number_for_the_number"+a+"is"+str(int(a)+1)+".")
+print("The_previous_number_for_the_number"+a+"is"+str(int(a)-1)+".")
+
+7:
+a=input( )
+b=input( )
+c=input( )
+print(str((a//2+a%2)+(b//2+b%2)+(c//2+c%2)))
