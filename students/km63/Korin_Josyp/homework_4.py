@@ -234,21 +234,18 @@ print(l[-2])
 числом 0. Определите, сколько элементов этой последовательности 
 равны ее наибольшему элементу.
 """
-max = 0
-max_i = 0
-l = []
-k = 0
-while True:
-    n = int(input())
-    if n == 0:
-        break
-    l.append(n)
-    if max<n:
-        max = n
-for i in l:
-    if i == max:
-        k += 1
-print(k)
+first_max = int(input())
+second_max = int(input())
+if first_max < second_max:
+    first_max, second_max = second_max, first_max
+element = int(input())
+while element != 0:
+    if element > first_max:
+        second_max, first_max = first_max, element
+    elif element > second_max:
+        second_max = element
+    element = int(input())
+print(second_max)
 #-----------------------------------------------------------------
 
 #task15--------------------------------------------------------
