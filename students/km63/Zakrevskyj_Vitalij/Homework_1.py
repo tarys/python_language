@@ -57,18 +57,15 @@ print(k%n)
 """
 #
 n=int(input())
+hours = 0
+minutes = 0
+if n >=60:
+  hours = n // 60
+  minutes=n % 60
 
-if n>=60:
-   
-  hours=n//60
-    
-  minutes=n%60
-
-if hours>=24:
-    
-  days=n//24
-    
-  hours=hours%24
+if hours >= 24:
+  days=n // 24
+  hours=hours % 24
 
 print(hours, minutes)
 #---------------------------------------------------------------------
