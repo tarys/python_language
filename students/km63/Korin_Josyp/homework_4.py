@@ -57,9 +57,8 @@ print(power - 1, two_in_power // 2)
 x = int(input())
 y = int(input())
 i = 1
-t = x
-while y>t:
-    t += t * 0.1
+while y>x:
+    x *=1.1
     i += 1
 print(i)
 #-----------------------------------------------------------------
