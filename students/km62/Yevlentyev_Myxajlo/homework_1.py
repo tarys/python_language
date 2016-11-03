@@ -9,9 +9,9 @@
 """
 
 #input------------------------------------------------------------------
-a = int(input(" "))
-b = int(input(" "))
-c = int(input(" "))
+a = int(input())
+b = int(input())
+c = int(input())
 #output-----------------------------------------------------------------
 print(a + b + c)
 
@@ -27,8 +27,8 @@ print(a + b + c)
 """
 
 #input------------------------------------------------------------------
-b = int(input(" "))
-h = int(input(" "))
+b = int(input())
+h = int(input())
 #output-----------------------------------------------------------------
 print(b*h/2)
 
@@ -46,8 +46,8 @@ print(b*h/2)
 """
 
 #input------------------------------------------------------------------
-students = int(input(""))
-apples = int(input(""))
+students = int(input())
+apples = int(input())
 #main-------------------------------------------------------------------
 every = apples // students
 rem = apples % students
@@ -69,7 +69,7 @@ print(rem)
 """
 
 #input------------------------------------------------------------------
-minutes = int(input(" "))
+minutes = int(input())
 #main-------------------------------------------------------------------
 period = minutes//1440
 minutes = minutes - period*1440
