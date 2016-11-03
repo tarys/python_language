@@ -5,10 +5,6 @@
 Вхідні дані: користувач вводить ціле число
 Вихідні дані: вивести ціле число
 """
-
-
-
-#
 a=int(input())
 b=int(input())
 if a<b:
@@ -29,17 +25,13 @@ sign(x) = 0, if x = 0..
 Вхідні дані: користувач вводить дійсне число.
 Вихідні дані: вивести результат sign.
 """
-
-
-
-#
 x = float(input())
 if x > 0:
-    print(1)
+	print(1)
 elif x < 0:
-    print(-1)
+	print(-1)
 else:
-    print(0)
+	print(0)
 
 #-----------------------------------------------------------------
 
@@ -51,23 +43,19 @@ else:
 Вхідні дані: 3 цілих числа.  Кожне число користувач вводить в окремому рядку.
 Вихідні дані: вивести ціле число
 """
-
-
-
-#
- x=int(input))
+x=int(input))
 y=int(input))
 z=int(input))
 if x<y<z :
-    print(x)
+	print(x)
 elif x<z<y :
-    print(x)
+	print(x)
 elif y<x<z :
-    print(y)
+	print(y)
 elif y<z<x :
-    print(y)
+	print(y)
 else :	
-    print(z)
+	print(z)
 
 
 #-----------------------------------------------------------------
@@ -83,18 +71,14 @@ else :
 Вхідні дані: ціле число, що вводить користувач
 Вихідні дані: вивести текстовий рядок.
 """
-
-
-
-#
 x = int(input())
 if x%4==0 and x%100!=0:    
-    print("LEAP")
+	print("LEAP")
 elif x%400==0:
-    print("LEAP")
+	print("LEAP")
 else:
-    print("COMMON")
- 
+	print("COMMON")
+	
 #-----------------------------------------------------------------
 
 
@@ -113,17 +97,16 @@ x = int(input())
 y = int(input())
 z = int(input())
 if x == y == z:
-    print(3)
+	print(3)
 elif y==x and x!=z:
-    print(2)
+	print(2)
 elif y==z and x!=y:
-    print(2)
+	print(2)
 elif x==z and y!=x:
-    print(2)
+	print(2)
 elif x!=y!=z:	
-    print(0)
- 
-
+	print(0)
+	
 #-----------------------------------------------------------------
 
 
@@ -146,9 +129,9 @@ y = int(input())
 a = int(input())
 b = int(input())
 if x == a or y==b:
-    print("YES")
+	print("YES")
 else :
-    print("NO")	
+	print("NO")	
 #-----------------------------------------------------------------
 
 
@@ -171,11 +154,12 @@ y = int(input())
 a = int(input())
 b = int(input())
 if (x+y)%2==0 and (a+b)%2==0 :
-    print("YES")
+	print("YES")
 elif (x+y)%2!=0 and (a+b)%2!=0 :
-    print("YES")
+
+	print("YES")
 else :
-    print("NO") 
+	print("NO") 
 
 #-----------------------------------------------------------------
 
@@ -198,11 +182,10 @@ y = int(input())
 a = int(input())
 b = int(input())
 if -1<=(x-a)<=1 and -1<=(y-b)<=1:
-    print("YES")
+	print("YES")
 else:
-    print("NO")
- 
-
+	print("NO")
+	
 #-----------------------------------------------------------------
 
 
@@ -224,10 +207,9 @@ y = int(input())
 a = int(input())
 b = int(input())
 if abs(x - a) == abs(y - b):
-    print("YES")
+	print("YES")
 else:
-    print("NO")
- 
+	print("NO")
 
 #-----------------------------------------------------------------
 
@@ -250,12 +232,12 @@ y = int(input())
 a = int(input())
 b = int(input())
 if abs(x - a) == abs(y - b):
-    print("YES")
+	print("YES")
 elif x == a or y==b:
-    print("YES")
+	print("YES")
 else :	
-    print("NO")
- 
+
+	print("NO")
 	
 #-----------------------------------------------------------------
 
@@ -280,11 +262,11 @@ y = int(input())
 a = int(input())
 b = int(input())
 if abs(x-a)==2 and abs(y-b)==1:
-    print("YES")
+	print("YES")
 elif abs(x-a)==1 and abs(y-b)==2:
-    print("YES")
+	print("YES")
 else:	
-    print("NO") 
+	print("NO") 
 
 #-----------------------------------------------------------------
 
@@ -304,11 +286,10 @@ n = int(input())
 m = int(input())
 k = int(input())
 if n*m-k==n or n*m-k==m and n*m>k and k!=1:
-    print("YES")
+	print("YES")
 elif (n*m-k)%2==0 and n*m>k and k!=1:
-     print("YES")
+	print("YES")
 else:	
-    print("NO")
- 
+	print("NO")
 
 #-----------------------------------------------------------------
