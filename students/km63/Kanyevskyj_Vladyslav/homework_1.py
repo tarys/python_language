@@ -10,10 +10,10 @@
 
 
 #
-a=float(input())
-b=float(input())
-c=float(input())
-z=a+b+c
+a = float(input())
+b = float(input())
+c = float(input())
+z = a+b+c
 print(z)
 
 #-----------------------------------------------------------------
