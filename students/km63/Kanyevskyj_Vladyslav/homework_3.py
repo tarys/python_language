@@ -9,7 +9,7 @@ fac=1
 n = int(input()) 
 
 for i in range (1,n+1,1): 
-    fac = fac*i 
+ fac = fac*i 
 
 print(fac) 
  
@@ -29,8 +29,8 @@ summ=0
 n = int(input()) 
 
 for i in range(1,n+1): 
-  fac=fac*i 
-  summ=summ+fac 
+ fac=fac*i 
+ summ=summ+fac 
 
 print(summ) 
  
@@ -49,9 +49,9 @@ n = int(input())
 kol = 0 
 
 for i in range(n): 
-  num = int(input()) 
-  if num==0: 
-    kol+=1 
+ num = int(input()) 
+ if num==0: 
+   kol+=1 
 
 print(kol) 
  
@@ -68,8 +68,8 @@ fac=1
 n = int(input()) 
 
 for i in range (n): 
-    for j in range (1,i+2):
-        print(j, end='') 
+ for j in range (1,i+2):
+  print(j, end='') 
     print()
  
  
