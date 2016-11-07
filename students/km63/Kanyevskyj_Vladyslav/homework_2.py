@@ -43,9 +43,9 @@ else:
 Вхідні дані: 3 цілих числа.  Кожне число користувач вводить в окремому рядку.
 Вихідні дані: вивести ціле число
 """
-x=int(input))
-y=int(input))
-z=int(input))
+x=int(input())
+y=int(input())
+z=int(input())
 if x<y<z :
 	print(x)
 elif x<z<y :
