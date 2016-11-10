@@ -19,9 +19,9 @@ sign(x) = -1, if x < 0,
 sign(x) = 0, if x = 0..
 """
 x = int(input())
-if x>0:
+if x > 0:
     print("1")
-elif x==0:
+elif x == 0:
     print("0")
 else:
     print("-1")
@@ -35,9 +35,9 @@ else:
 a = int(input())
 b = int(input())
 c = int(input())
-if a<=b and a<=c:
+if a <= b and a <= c:
     print(a)
-elif b<=a and b<=c:
+elif b <= a and b <= c:
     print(b)
 else:
     print(c)
@@ -52,9 +52,9 @@ else:
 рік завжди високосним, якщо його номер ділиться на 400 без остачі
 """
 x = int(input())
-if x%4 == 0 and x%100 != 0:    
+if x % 4 == 0 and x % 100 != 0:    
     print("LEAP")
-elif x%400 == 0:
+elif x % 400 == 0:
     print("LEAP")
 else:
     print("COMMON")
@@ -85,7 +85,7 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if x1 == x2 or y1 ==y2:
+if x1 == x2 or y1 == y2:
     print("YES")
 else:
     print("NO")
@@ -100,9 +100,9 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if (x1+y1)%2==0 and (x2+y2)%2==0:
+if (x1 + y1) % 2 == 0 and (x2 + y2) %2 == 0:
     print("YES")
-elif (x1+y1)%2!=0 and (x2+y2)%2!=0:
+elif (x1 + y1) % 2 != 0 and (x2 + y2) % 2 != 0:
     print("YES")
 else:
     print("NO")
@@ -117,7 +117,7 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if -1<=(x1-x2)<=1 and -1<=(y1-y2)<=1:
+if -1 <= (x1 - x2) <= 1 and -1 <= (y1 - y2) <= 1:
     print("YES")
 else:
     print("NO")
@@ -132,7 +132,7 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if abs(x1-x2) == abs(y1-y2):
+if abs(x1 - x2) == abs(y1 - y2):
     print("YES")
 else:
     print("NO")
@@ -162,9 +162,9 @@ x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-if abs(x1-x2)==2 and abs(y1-y2)==1:
+if abs(x1 - x2) == 2 and abs(y1 - y2) == 1:
     print("YES")
-elif abs(x1-x2)==1 and abs(y1-y2)==2:
+elif abs(x1 - x2) == 1 and abs(y1 - y2) == 2:
     print("YES")
 else:
     print("NO")
