@@ -16,7 +16,7 @@ print(a + b + c)
 """
 b = int(input())
 h = int(input())
-print(b*h/2)
+print(b * h / 2)
 #-----------------------------------------------------------------
 
 
@@ -37,9 +37,9 @@ b=print(k % n)
 Нехай число N - кількість хвилин, відрахованих після півночі. Скільки годин і хвилин буде показувати цифровий годинник, якщо за відлік взяти 00:00? Програма повинна виводити два числа: кількість годин (від 0 до 23) і кількість хвилин (від 0 до 59). Візьміть до уваги, що починаючи з півночі може пройти декілька днів, тому число N може бути достатньо великим.
 """
 a = int(input())
-b = a//60
-c = a%60
-d = b%24
+b = a // 60
+c = a % 60
+d = b % 24
 print(d, c)
 #-----------------------------------------------------------------
 
@@ -49,7 +49,7 @@ print(d, c)
 Напишіть програму, яка вітає користувача, друкуючи слово "Hello", ім'я користувача і знак оклику після нього. Наприклад “Hello, Mike!”
 """
 name = input()
-print(("Hello, " + name +"!") )
+print(("Hello, " + name + "!") )
 #-----------------------------------------------------------------
 
 
@@ -60,8 +60,8 @@ The next number for the number 179 is 180.
 The previous number for the number 179 is 178.
 """
 x = int(input())
-print("The next number for the number " + str(x) + " is " + str(x+1))
-print("The previous number for the number " + str(x) + " is "+ str(x-1))
+print("The next number for the number " + str(x) + " is " + str(x + 1))
+print("The previous number for the number " + str(x) + " is "+ str(x - 1))
 #-----------------------------------------------------------------
 
 
@@ -73,8 +73,8 @@ print("The previous number for the number " + str(x) + " is "+ str(x-1))
 a = int(input())
 b = int(input())
 c = int(input())
-x = a%2+a//2
-y = b%2+b//2
-z = c%2+c//2
-print(x+y+z
+x = a % 2 + a // 2
+y = b % 2 + b // 2
+z = c % 2 + c // 2
+print(x+y+z)
 #-----------------------------------------------------------------
