@@ -25,13 +25,13 @@ def distance(x1, y1, x2, y2):
     return result
 ###
 
-x1 = float(input()) #"Enter x1" 
-y1 = float(input()) #"Enter y1" 
-x2 = float(input()) #"Enter x2" 
-y2 = float(input()) #"Enter y2" 
+abscissa1 = float(input()) #"Enter x1" 
+ordinate1 = float(input()) #"Enter y1" 
+abscissa2 = float(input()) #"Enter x2" 
+ordinate2 = float(input()) #"Enter y2" 
 
-m_result = distance(x1, y1, x2, y2)
-print(m_result)
+Distance_result = distance(abscissa1, ordinate1, abscissa2, ordinate2)
+print(Distance_result)
 
 #----------------------------------------------------------#
 
@@ -49,24 +49,24 @@ def power(a, n):
     if n == 0:
         result = 1 #a^0 = 1; a = R
     elif n > 0:
-        Pow = 1 #Initialization
+        Power = 1 #Initialization
         for i in range(n):
-            Pow*=a
-        result = Pow
+            Power*=a
+        result = Power
     elif n < 0:
-        Pow = 1
+        Power = 1
         n = -n # -(-n) => n
         for i in range(n):
-            Pow*=a
-        result = 1/Pow #a^-n = 1/a^n
+            Power*=a
+        result = 1/Power #a^-n = 1/a^n
     return result
 ###
 
-a = float(input()) #"Enter exp"
-n = int(input()) #"Enter pow"
+Exponent = float(input()) #"Enter exp"
+Pow = int(input()) #"Enter pow"
 
-res = power(a, n)
-print(res)
+Result = power(Exponent, Pow)
+print(Result)
 
 #----------------------------------------------------------#
 
@@ -87,11 +87,11 @@ def Power(a, n, Pow = 1):
         return 1
 ###
     
-a = float(input()) #"Enter exp"
-n = int(input()) #"Enter pow (n>=0)"
+Exponent = float(input()) #"Enter exp"
+Pow = int(input()) #"Enter pow (n>=0)"
 
-res = Power(a, n)
-print(res)
+Result = Power(Exponent, Pow)
+print(Result)
 
 #----------------------------------------------------------#
 
@@ -111,9 +111,9 @@ def fib(n):
     elif n == 0:
         return 0
     
-n = int(input()) #"Enter parametr (n >= 2, n = Z)"
+Number = int(input()) #"Enter parametr (n >= 2, n = Z)"
 
-res = fib(n)
-print(res)
+Result = fib(Number)
+print(Result)
 
 #----------------------------------------------------------#
