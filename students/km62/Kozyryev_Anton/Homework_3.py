@@ -15,13 +15,13 @@
     По данному натуральному n вычислите значение n!. Пользоваться математической библиотекой math в этой задаче запрещено.
 """
 
-def_n = 1 #Default N
-step = 0 #
-n = int(input()) #"Enter N: "
-for i in range(n):
-    step += 1
-    def_n = def_n * step
-print(def_n)
+Default_Number = 1 #Default N
+Step = 0 #
+Number = int(input()) #"Enter N: "
+for i in range(Number):
+    Step += 1
+    Default_Number = Default_Number * Step
+print(Default_Number)
 
 #----------------------------------------------------------#
 
@@ -34,15 +34,15 @@ print(def_n)
     В решении этой задачи можно использовать только один цикл. Пользоваться математической библиотекой math в этой задаче запрещено.
 """
 
-def_n = 1 #Default N
+Default_Number = 1 #Default N
 Sum = 0 #Default sum
-step = 0 #
-n = int(input()) #"Enter N: "
+Step = 0 #
+Number = int(input()) #"Enter N: "
 # 1! + 2! + 3! + ... + n! -> x! + (x+1)! + (x+2)! + ...
-for i in range(n):
-    step += 1
-    def_n = def_n * step
-    Sum = Sum + def_n
+for i in range(Number):
+    Step += 1
+    Default_Number = Default_Number * Step
+    Sum = Sum + Default_Number
 print(Sum)
 
 #----------------------------------------------------------#
@@ -58,13 +58,13 @@ print(Sum)
     Вам нужно подсчитать количество чисел, равных нулю, а не количество цифр.
 """
 
-N = int(input()) # N numbers
-zNumber = 0; #Zero numbers
-for i in range(N):
-    num = int(input())
-    if num == 0:
-        zNumber += 1
-print(zNumber)
+Amount_of_Numbers = int(input()) # N numbers
+Zero_Number = 0; #Zero numbers
+for i in range(Amount_of_Numbers):
+    Number = int(input())
+    if Number == 0:
+        Zero_Number += 1
+print(Zero_Number)
 
 #----------------------------------------------------------#
 
@@ -77,16 +77,16 @@ print(zNumber)
     По данному натуральному n ≤ 9 выведите лесенку из n ступенек, i-я ступенька состоит из чисел от 1 до i без пробелов.
 """
 
-N = int(input()) # Stairs number
-step = 1 #
-num = " " # Count of number per stair
-if N >= 9:
+Stairs_Number = int(input()) # Stairs number
+Step = 1 #
+Number = " " # Count of number per stair
+if Stairs_Number >= 9:
     print("Too much")
 else:
-    for i in range(N):
-        num = num + str(step)
-        print(num)
-        step += 1
+    for i in range(Stairs_Number):
+        Number = Number + str(Step)
+        print(Number)
+        Step += 1
 
 # N = 1 => num = " " + "1" 
 # N = 2 => num = " " + "1" + "2"
