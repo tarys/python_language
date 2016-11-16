@@ -123,14 +123,14 @@ print(Years);
 """
 
 
-count = 0 #Numbers count
+Count = 0 #Numbers count
 
 while True:
-    num = int(input()) #"Enter number (enter 0 to stop): "
-    if num == 0:
+    Number = int(input()) #"Enter number (enter 0 to stop): "
+    if Number == 0:
         break #not count +1
-    count+=1
-print(count)
+    Count+=1
+print(Count)
 
 #----------------------------------------------------------#
 
@@ -142,15 +142,15 @@ print(count)
     В этой и во всех следующих задачах числа, следующие за первым нулем, учитывать не нужно.
 """
 
-count = 0 #Numbers count
+Count = 0 #Numbers count
 Sum = 0
 
 while True:
-    num = int(input())
-    Sum = Sum + num;
-    if num == 0:
+    Number = int(input())
+    Sum = Sum + Number;
+    if Number == 0:
         break #not count +1
-    count+=1
+    Count+=1
 print(Sum)
 
 #----------------------------------------------------------#
@@ -162,16 +162,16 @@ print(Sum)
     Определите среднее значение всех элементов последовательности, завершающейся числом 0.
 """
 
-count = 0 #Numbers count
+Count = 0 #Numbers count
 Sum = 0
 
 while True:
-    num = int(input())
-    Sum = Sum + num;
-    if num == 0:
+    Number = int(input())
+    Sum = Sum + Number;
+    if Number == 0:
         break #not count +1
-    count+=1
-print(Sum / count) # (X1 + X2 + X3 + ... + Xn) / n 
+    Count+=1
+print(Sum / Count) # (X1 + X2 + X3 + ... + Xn) / n 
 
 #----------------------------------------------------------#
 
@@ -183,17 +183,17 @@ print(Sum / count) # (X1 + X2 + X3 + ... + Xn) / n
     Определите значение наибольшего элемента последовательности.
 """
 
-count = 0 #Numbers count
-d_num = 0 #Default value
+Count = 0 #Numbers count
+Default_value = 0
 
 while True:
-    num = int(input())
-    if num > d_num:
-        d_num = num # Set temp var to bigger value
-    if num == 0:
+    Number = int(input())
+    if Number > Default_value:
+        Default_value = Number # Set temp var to bigger value
+    if Number == 0:
         break #not count +1
-    count+=1
-print(d_num)
+    Count+=1
+print(Default_value)
 
 #----------------------------------------------------------#
 
@@ -207,19 +207,19 @@ print(d_num)
     Нумерация элементов начинается с нуля.
 """
 
-count = 0 #Numbers count
-index = 0 #Default index
-d_num = 0 #Default value
+Count = 0 #Numbers count
+Index = 0 #Default index
+Default_value = 0 #Default value
 
 while True:
-    num = int(input())
-    if num == 0:
+    Number = int(input())
+    if Number == 0:
         break #not count +1
-    if num > d_num:
-        d_num = num # Set temp var to bigger value
-        index = count
-    count+=1
-print(index)
+    if Number > Default_value:
+        Default_value = Number # Set temp var to bigger value
+        Index = count
+    Count+=1
+print(Index)
 
 #----------------------------------------------------------#
 
@@ -230,16 +230,16 @@ print(index)
     Определите количество четных элементов в последовательности, завершающейся числом 0.
 """
 
-count = 0 #Numbers count
+Count = 0 #Numbers count
 Mod = 0
 
 while True:
-    num = int(input())
-    if num == 0:
+    Number = int(input())
+    if Number == 0:
         break #not count +1
-    if num % 2 == 0:
+    if Number % 2 == 0:
         Mod += 1
-    count+=1
+    Count+=1
 print(Mod)
 
 #----------------------------------------------------------#
@@ -253,16 +253,16 @@ print(Mod)
 """
 
 Count = 0
-num_p = 500
+Number_previous = 0
 
-
+Number = int(input())
 while True:
-    num = int(input())
-    if num == 0:
+    if Number == 0:
         break
-    if num > num_p:
+    if Number > Number_previous:
         Count += 1
-    num_p = num
+    Number_previous = Number
+    Number = int(input())
 print(Count)
 
 #----------------------------------------------------------#
@@ -276,20 +276,20 @@ print(Count)
     Гарантируется, что в последовательности есть хотя бы два элемента.
 """
 
-count = 0 #Numbers count
-d_num = 0 #Default value
-iMax2 = 0; # Second maximum
+Count = 0 #Numbers count
+Default_value = 0 
+Second_Maximum = 0; # Second maximum
 
 while True:
-    num = int(input())
-    if iMax2 <= num and iMax2 <= d_num:
-        iMax2 = d_num
-    if num > d_num:
-        d_num = num # Set temp var to bigger value
-    if num == 0:
+    Number = int(input())
+    if Second_Maximum <= Number and Second_Maximum <= Default_value:
+        Second_Maximum = Default_value
+    if Number > Default_value:
+        Default_value = Number # Set temp var to bigger value
+    if Number == 0:
         break #not count +1
-    count+=1
-print(iMax2)
+    Count+=1
+print(Second_Maximum)
 
 #----------------------------------------------------------#
 
