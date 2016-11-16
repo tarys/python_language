@@ -107,14 +107,14 @@ else:
 """
 
 #print("Task #5");
-x1 = int(input()) #"Enter first integer number:"
-x2 = int(input()) #"Enter second integer number:"
-x3 = int(input()) #"Enter third integer number:"
-if (x1 != x2) and (x2 != x3) and (x3 != x1):
+Number_1 = int(input()) #"Enter first integer number:"
+Number_2 = int(input()) #"Enter second integer number:"
+Number_3 = int(input()) #"Enter third integer number:"
+if (Number_1 != Number_2) and (Number_2 != Number_3) and (Number_3 != Number_1):
     print(0)
-elif (x1 == x2) and (x2 == x3) and (x3 == x1):
+elif (Number_1 == Number_2) and (Number_2 == Number_3) and (Number_3 == Number_1):
     print(3)
-elif (x1 == x2) or (x2 == x3) or (x3 == x1):
+elif (Number_1 == Number_2) or (Number_2 == Number_3) or (Number_3 == Number_1):
     print(2)
 #print("Fifth task complited!");
 
@@ -167,12 +167,12 @@ if ((SRow > 8 or SRow < 1) or (SColumn > 8 or SColumn < 1)) or ((ERow > 8 or ERo
     print("Invalid position!")
 else:
     if ((SRow + SColumn) % 2 == 0): # Start position (1,1) - black, next (2,1) and (1,2) - white;
-        SColor = "Black"
+        SColor = "Black" #Start color
     else:
         SColor = "White"
             
     if ((ERow + EColumn) % 2 == 0):
-        EColor = "Black"                       
+        EColor = "Black" #End color                      
     else:
         EColor = "White"                       
         
@@ -286,6 +286,7 @@ else:
 """
 
 #print("Task #11");
+Result = "NO"
 SRow = int(input()) #"Start row (1-8):"
 SColumn = int(input()) #"Start column (1-8):"
 ERow = int(input()) #"End row (1-8):"
@@ -293,37 +294,13 @@ EColumn = int(input()) #"End column (1-8):"
 if ((SRow > 8 or SRow < 1) or (SColumn > 8 or SColumn < 1)) or ((ERow > 8 or ERow < 1) or (EColumn > 8 or EColumn < 1)):
     print("Invalid position!")
 else:
-
-        #Possible positions
-     pRow1 = SRow + 1
-     pColumn1 = SColumn + 2
-        #
-     pRow2 = SRow + 2
-     pColumn2 = SColumn + 1
-        #
-     pRow3 = SRow - 1
-     pColumn3 = SColumn + 2
-        #
-     pRow4 = SRow - 2
-     pColumn4 = SColumn + 1
-        #
-     pRow5 = SRow - 1
-     pColumn5 = SColumn - 2
-        #
-     pRow6 = SRow - 2
-     pColumn6 = SColumn - 1
-        #
-     pRow7 = SRow + 1
-     pColumn7 = SColumn - 2
-        #
-     pRow8 = SRow + 2
-     pColumn8 = SColumn - 1
-        ###
-
-     if (((ERow == pRow1) and (EColumn == pColumn1)) or ((ERow == pRow2) and (EColumn == pColumn2)) or (ERow == pRow3) and (EColumn == pColumn3) or (ERow == pRow4) and (EColumn == pColumn4) or (ERow == pRow5) and (EColumn == pColumn5) or (ERow == pRow6) and (EColumn == pColumn6) or (ERow == pRow7) and (EColumn == pColumn7) or (ERow == pRow8) and (EColumn == pColumn8)):
-        print("YES")
-     else:
-        print("NO")
+    Delta_Row = math.fabs(SRow - ERow) #Difference in row values
+    Delta_Column = math.fabs(SColumn - EColumn) #Difference in column values
+    if (Delta_Row == 0 or Delta_Row == 2) and (Delta_Column == 2):
+        Result = "YES"
+    elif (Delta_Row == 0 and Delta_Column == 2) or (Delta_Column == 0):
+        Result = "YES"
+    print(Result)
 #print("Eleventh task complited!")
 
 #---------------------------------------------------------#
