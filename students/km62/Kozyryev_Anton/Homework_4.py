@@ -14,14 +14,14 @@
     По данному целому числу N распечатайте все квадраты натуральных чисел, не превосходящие N, в порядке возрастания.
 """
 
-def_num = 1;
-i = 1 #Step counter
-N = int(input()) #"Enter pow limit: "
-if N <= def_num:
-    N = def_num
-while i ** 2 <= N:
-    print(i ** 2)
-    i += 1
+Default_Number = 1;
+Step = 1 #Step counter
+Limit = int(input()) #"Enter pow limit: "
+if Limit <= Default_Number:
+    Limit = Default_Number
+while Step ** 2 <= Limit:
+    print(Step ** 2)
+    Step += 1
 
 #Variant 2
 
@@ -42,14 +42,14 @@ while i ** 2 <= N:
     Дано целое число, не меньшее 2. Выведите его наименьший натуральный делитель, отличный от 1.
 """
 
-def_num = 2 #Default value
-num = int(input()) #"Enter devide number: "
-if num <= def_num:
-    num = def_num
-dev = 2 #Default devider
-while num % dev != 0:
-    dev += 1
-print(dev)
+Default_Number = 2 #Default value
+Number = int(input()) #"Enter devide number: "
+if Number <= Default_Number:
+    Number = Default_Number
+Devider = 2 #Default devider
+while Number % Devider != 0:
+    Devider += 1
+print(Devider)
 
 #----------------------------------------------------------#
 
@@ -61,13 +61,13 @@ print(dev)
     Операцией возведения в степень пользоваться нельзя!
 """
 
-MaxP = int(input()) #"Enter maximum pow number:"
-CurP = 0 #Current pow number
-num = 1 #Current number
-while (num * 2) <= MaxP: 
-    CurP += 1 #Count of repeat
-    num = num * 2; 
-print(CurP, num)
+MaxPow = int(input()) #"Enter maximum pow number:"
+CurrentPow = 0 #Current pow number
+Number = 1 #Current number
+while (Number * 2) <= MaxPow: 
+    CurrentPow += 1 #Count of repeat
+    Number = Number * 2; 
+print(CurrentPow, Number)
 
 #----------------------------------------------------------#
 
@@ -79,13 +79,13 @@ print(CurP, num)
     По данному числу y определите номер дня, на который пробег спортсмена составит не менее y километров.
 """
 
-days = 1 # Default days number
-X = int(input()) #"Enter first attempt:"
-Y = int(input()) #"Enter final try:"
-while X < Y:
-    X = X + 0.1*X
-    days += 1
-print(days)
+Days = 1 # Default days number
+First_attempt = int(input()) #"Enter first attempt:"
+Final_try = int(input()) #"Enter final try:"
+while First_attempt < Final_try:
+    First_attempt = First_attempt + 0.1*First_attempt
+    Days += 1
+print(Days)
 
 #----------------------------------------------------------#
 
@@ -99,17 +99,17 @@ print(days)
     Программа получает на вход три натуральных числа: x, p, y и должна вывести одно целое число.
 """
 
-years = 0;
+Years = 0;
 
-X = int(input()); #"Start deposit: "
-P = int(input()); #"Interest: "
-Y = int(input()); #"Get: "
+Deposit = int(input()); #"Start deposit: "
+Interest = int(input()); #"Interest: "
+Get = int(input()); #"Get: "
 
-while X < Y:
-    X = round(X, 2);
-    X = X + 0.01*P*X;
-    years += 1;
-print(years);
+while Deposit < Get:
+    Deposit = round(Deposit, 2);
+    Deposit = Deposit + 0.01*Interest*Deposit;
+    Years += 1;
+print(Years);
 
 #----------------------------------------------------------#
 
