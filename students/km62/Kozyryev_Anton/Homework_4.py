@@ -301,20 +301,20 @@ print(Second_Maximum)
     Определите, сколько элементов этой последовательности равны ее наибольшему элементу.
 """
 
-num_M = 0
+Maximum_Number = 0
 array = []
-count = 0
+Count = 0
 while True:
-    N = int(input())
-    if n == 0:
+    Number = int(input())
+    if Number == 0:
         break
-    array.append(n)
-    if num_M < n:
-        num_M = n
+    array.append(Number)
+    if Maximum_Number < Number:
+        Maximum_Number = Number
 for i in array:
-    if i == num_M:
-        count += 1
-print(count)
+    if i == Maximum_Number:
+        Count += 1
+print(Count)
 
 #----------------------------------------------------------#
 
@@ -330,24 +330,24 @@ print(count)
     Эту задачу можно решать и циклом for.
 """
 
-n = int(input())
-fib1 = 0 #F0 = 0
-fib2 = 1 #F1 = 1
-fibS = 0 # Fibonachi sum
+Number = int(input())
+Zero_Fibonachi = 0 #F0 = 0
+First_Fibonachi = 1 #F1 = 1
+Sum_Fibonachi = 0 # Fibonachi sum
 Count = 0 #Cycle parametr
 
-if n == 0:
-    print(fib1)
-elif n == 1:
-    print(fib2)
+if Number == 0:
+    print(Zero_Fibonachi)
+elif Number == 1:
+    print(First_Fibonachi)
 else:
-    while Count < n - 1:
-        fibS = fib2 + fib1 # Fn+2 = Fn+1 + Fn
-        fib1 = fib2 # Fn => Fn+1
-        fib2 = fibS # Fn+1 => Fn+2
+    while Count < Number - 1:
+        Sum_Fibonachi = First_Fibonachi + Zero_Fibonachi # Fn+2 = Fn+1 + Fn
+        Zero_Fibonachi = First_Fibonachi # Fn => Fn+1
+        First_Fibonachi = Sum_Fibonachi # Fn+1 => Fn+2
         # Fn+3 = Fn+2 + Fn+1
         Count += 1
-    print(fibS)
+    print(Sum_Fibonachi)
 
 #----------------------------------------------------------#
 
@@ -359,22 +359,22 @@ else:
     Если А не является числом Фибоначчи, выведите число -1.   
 """
 
-n = int(input())
-fib1 = 0 #F0 = 0
-fib2 = 1 #F1 = 1
-fibN = -1
-fibS = 0 # Fibonachi sum
+Number = int(input())
+Zero_Fibonachi = 0 #F0 = 0
+First_Fibonachi = 1 #F1 = 1
+Result_Fibonachi = -1
+Sum_Fibonachi = 0 # Fibonachi sum
 Count = 0 #Cycle parametr
 
-while fibS <= n - 1:
-        fibS = fib2 + fib1 # Fn+2 = Fn+1 + Fn
-        fib1 = fib2 # Fn => Fn+1
-        fib2 = fibS # Fn+1 => Fn+2
+while Sum_Fibonachi <= Number - 1:
+        Sum_Fibonachi = First_Fibonachi + Zero_Fibonachi # Fn+2 = Fn+1 + Fn
+        Zero_Fibonachi = First_Fibonachi # Fn => Fn+1
+        First_Fibonachi = Sum_Fibonachi # Fn+1 => Fn+2
         # Fn+3 = Fn+2 + Fn+1
         Count += 1
-if n == fibS:
-    fibN = Count + 1
-print(fibN)
+if Number == Sum_Fibonachi:
+    Result_Fibonachi = Count + 1
+print(Result_Fibonachi)
 
 #----------------------------------------------------------#
 
@@ -386,25 +386,25 @@ print(fibN)
     Определите, какое наибольшее число подряд идущих элементов этой последовательности равны друг другу. 
 """
 
-count = 1 #Numbers count
-tempNum = 0 #Comparing number
-Pnum = 0 #Previous number
+Count = 1 #Numbers count
+TemplateNumber = 0 #Comparing number
+PreviousNumber = 0 #Previous number
 
 while True:
-    num = int(input()) #"Enter number (enter 0 to stop): "
-    if num == 0:
+    Number = int(input()) #"Enter number (enter 0 to stop): "
+    if Number == 0:
         break #not count +1
-    if Pnum == num:
-        count+=1
+    if PreviousNumber == Number:
+        Count+=1
     else:
-        if count>tempNum:
-            tempNum = count
-            count = 1
-    Pnum = num
-if tempNum > count:
-    print(tempNum)
-elif tempNum <= count:
-    print(count)
+        if Count>TemplateNumber:
+            TemplateNumber = Count
+            Count = 1
+    PreviousNumber = Number
+if TemplateNumber > Count:
+    print(TemplateNumber)
+elif TemplateNumber <= Count:
+    print(Count)
 
 #----------------------------------------------------------#
 
@@ -421,22 +421,22 @@ elif tempNum <= count:
 
 """
 
-n = 0
-s = 0
-Arr = []
+Number_N = 0
+Number_S = 0
+Array = []
 Sum = 0
 while True:
-    x = int(input())
-    if x == 0: break
-    Arr = x
-    s += x
-    n += 1
-s = s/n
+    Number = int(input())
+    if Number == 0: break
+    Array = Number
+    Number_S += Number
+    Number_N += 1
+Number_S = Number_S/Number_N
 
-for i in range(Arr):
-    Sum += (Arr - s) ** 2 
+for i in range(Array):
+    Sum += (Array - Number_S) ** 2 
 
-delta = (Sum/(n-1)) ** (1/2)
-print(delta)
+Delta = (Sum/(Number_N-1)) ** (1/2)
+print(Delta)
 
 #----------------------------------------------------------#
