@@ -15,11 +15,11 @@
 """
 
 #print("Task #1");
-a = input() #"Enter the first number: "
-b = input() #"Enter the second number: "
-c = input() #"Enter the third number: "
-sum = int(a) + int(b) + int(c) # A + B + C
-print(sum) #"Sum: "
+Number_1 = input() #"Enter the first number: "
+Number_2 = input() #"Enter the second number: "
+Number_3 = input() #"Enter the third number: "
+Sum = int(Number_1) + int(Number_2) + int(Number_3) # A + B + C
+print(Sum) #"Sum: "
 #print("First task complited!")
 
 #---------------------------------------------------------#
@@ -33,10 +33,10 @@ print(sum) #"Sum: "
 """
 
 #print("Task #2");
-c1 = input() #"Enter the first side: "
-c2 = input() #"Enter the second side: "
-s = (int(c1) * int(c2)) / 2
-print(s) #"Square of tringle: "
+Side_1 = input() #"Enter the first side: "
+Side_2 = input() #"Enter the second side: "
+Square = (int(Side_1) * int(Side_2)) / 2
+print(Square) #"Square of tringle: "
 #print("Second task complited!");
 
 #---------------------------------------------------------#
@@ -50,12 +50,12 @@ print(s) #"Square of tringle: "
 """
 
 #print("Task #3");
-std = input() #"Students: "
-app = input() #"Apples: "
-per = int(app) / int(std) #per = per student
-ext = int(app) % int(std) #ext = extra
-print(int(per)) #"Apples per student: "
-print(int(ext)) #"Extra apples: "
+students = input() #"Students: "
+apples = input() #"Apples: "
+per_student = int(apples) / int(students) #per = per student
+extra = int(apples) % int(students) #ext = extra
+print(int(per_student)) #"Apples per student: "
+print(int(extra)) #"Extra apples: "
 #print("Third task complited!");
 
 #---------------------------------------------------------#
@@ -71,10 +71,10 @@ print(int(ext)) #"Extra apples: "
 """
 
 #print("Task #4");
-time = input() #"Time: "
-min = int(time) % 60
-hour = (int(time) // 60) % 24
-print(hour, min) #"Hours {}, minutes {}"
+Time = input() #"Time: "
+min = int(Time) % 60
+Hour = (int(Time) // 60) % 24
+print(Hour, min) #"Hours {}, minutes {}"
 #print("Fourth task complited!");
 
 #---------------------------------------------------------#
