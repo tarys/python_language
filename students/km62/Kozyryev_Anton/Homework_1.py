@@ -106,11 +106,11 @@ The previous number for the number 179 is 178.
 """
 
 #print("Task #6")
-CNumber = input() #"Enter your current number: "
-NNumber = int(CNumber) + 1 #Next number
-PNumber = int(CNumber) - 1 #Previous number
-print("The next number for the number", CNumber,"is" , NNumber) 
-print("The previous number for the number", CNumber,"is" , PNumber) 
+Current_Number = input() #"Enter your current number: "
+Next_Number = int(Current_Number) + 1 #Next number
+Previos_Number = int(Current_Number) - 1 #Previous number
+print("The next number for the number", Current_Number,"is" , Next_Number) 
+print("The previous number for the number", Current_Number,"is" , Previos_Number) 
 #print("Sixth task complited!")
 
 #---------------------------------------------------------#
@@ -124,20 +124,20 @@ print("The previous number for the number", CNumber,"is" , PNumber)
 """
 
 #print("Task #7");
-students1 = input();#"Enter the student number: "
-students2 = input();#"Enter the student number: "
-students3 = input();#"Enter the student number: "
+Amount_of_students1 = input();#"Enter the amount of students from first group: "
+Amount_of_students2 = input();#"Enter the amount of students from second group: "
+Amount_of_students3 = input();#"Enter the amount of students from third group: "
 
-extra = int(students1) % 2; # Extra desk for student (if student / mod = 1)
-desks1 = int(students1) // 2 + extra;
+Extra = int(Amount_of_students1) % 2; # Extra desk for student (if student / mod = 1)
+Desks_for_group1 = int(Amount_of_students1) // 2 + Extra;
 
-extra = int(students2) % 2; # Extra desk for student (if student / mod = 1)
-desks2 = int(students2) // 2 + extra;
+Extra = int(Amount_of_students2) % 2; # Extra desk for student (if student / mod = 1)
+Desks_for_group2 = int(Amount_of_students2) // 2 + Extra;
 
-extra = int(students3) % 2; # Extra desk for student (if student / mod = 1)
-desks3 = int(students3) // 2 + extra;
+Extra = int(Amount_of_students3) % 2; # Extra desk for student (if student / mod = 1)
+Desks_for_group3 = int(Amount_of_students3) // 2 + Extra;
 
-print(desks1 + desks2 + desks3);
+print(Desks_for_group1 + Desks_for_group2 + Desks_for_group3);
 #print("Seventh task complited!")
 
 #---------------------------------------------------------#
