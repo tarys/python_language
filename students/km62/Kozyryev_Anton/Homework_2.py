@@ -16,14 +16,14 @@ import math
 """
 
 #print("Task #1");
-a = int(input()) #"Enter first integer number:"
-b = int(input()) #"Enter second integer number:"
-if (a<b):
-    print(a)
-elif (b<a):
-    print(b)
+Number_1 = int(input()) #"Enter first integer number:"
+Number_2 = int(input()) #"Enter second integer number:"
+if (Number_1<Number_2):
+    print(Number_1)
+elif (Number_2<Number_1):
+    print(Number_2)
 else:
-    print(a)
+    print(Number_1)
 #print("First task complited!");
 
 #---------------------------------------------------------#
@@ -40,10 +40,10 @@ else:
 """
 
 #print("Task #2");
-x = int(input()) #"Enter integer number: "
-if x>0:
+Number = int(input()) #"Enter integer number: "
+if Number>0:
     print(1) #"sign(x) = 1"
-elif (x<0):
+elif (Number<0):
     print(-1) #"sign(x) = -1"
 else:
     print(0) #"sign(x) = 0"
@@ -60,15 +60,15 @@ else:
 """
 
 #print("Task #3");
-x1 = int(input()) #"Enter first integer number: "
-x2 = int(input()) #"Enter second integer number: "
-x3 = int(input()) #"Enter third integer number: "
-if (x1<x2) and (x1<x3):
-    print(x1)
-elif (x2<x1) and (x2<x3):
-    print(x2)
-elif (x3<x1) and (x3<x2):
-    print(x3)
+Number_1 = int(input()) #"Enter first integer number: "
+Number_2 = int(input()) #"Enter second integer number: "
+Number_3 = int(input()) #"Enter third integer number: "
+if (Number_1<Number_2) and (Number_1<Number_3):
+    print(Number_1)
+elif (Number_2<Number_1) and (Number_2<Number_3):
+    print(Number_2)
+elif (Number_3<Number_1) and (Number_3<Number_2):
+    print(Number_3)
 else:
     print("Some of them are equal!")
 #print("Third task complited!");
