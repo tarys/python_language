@@ -72,9 +72,9 @@ print(int(extra)) #"Extra apples: "
 
 #print("Task #4");
 Time = input() #"Time: "
-min = int(Time) % 60
+Min = int(Time) % 60
 Hour = (int(Time) // 60) % 24
-print(Hour, min) #"Hours {}, minutes {}"
+print(Hour, Min) #"Hours {}, minutes {}"
 #print("Fourth task complited!");
 
 #---------------------------------------------------------#
