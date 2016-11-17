@@ -3,19 +3,19 @@
 Выведите все элементы списка с четными индексами (то есть A[0], A[2], A[4], ...).
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
 
 def operation_data(elements):
-    data = []
-    for i in range(0, len(elements), 2):
-        data.append(elements[i])
-    return data
+	data = []
+	for i in range(0, len(elements), 2):
+		data.append(elements[i])
+return data
 
 
 
 def print_data(output_data):
-    for i in output_data:
+	for i in output_data:
         print (i, end=' ')
 
 print_data(operation_data(input_data()))
@@ -28,20 +28,20 @@ print_data(operation_data(input_data()))
 Выведите все четные элементы списка.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
 
 def operation_data(elements):
-    data = []
-    for i in elements:
+	data = []
+	for i in elements:
         if int(i) % 2 == 0:
-            data.append(i)
-    return data
+		data.append(i)
+return data
 
 
 
 def print_data(output_data):
-    for i in output_data:
+	for i in output_data:
         print (i, end=' ')
 
 print_data(operation_data(input_data()))
@@ -53,19 +53,19 @@ print_data(operation_data(input_data()))
 Дан список чисел. Выведите все элементы списка, которые больше предыдущего элемента.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split() 
+	return data
 
 def operation_data(elements):
-    data = []
-    for i in range(0, len(elements)):
+	data = []
+	for i in range(0, len(elements)):
         if i < len(elements)-1:
-            if int(elements[i]) < int(elements[i + 1]):
+		if int(elements[i]) < int(elements[i + 1]):
                 data.append(elements[i +1])
-    return data
+return data
 
 def print_data(output_data):
-    for i in output_data:
+	for i in output_data:
         print (i, end=' ')
 
 print_data(operation_data(input_data()))
@@ -78,22 +78,22 @@ print_data(operation_data(input_data()))
 Если таких пар соседей несколько — выведите первую пару.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
     
 def operation_data(elements):
-    data = []
-    for i in range(0, len(elements)):
-            if i < len(elements)-1:
+	data = []
+	for i in range(0, len(elements)):
+		if i < len(elements)-1:
                 if int(elements[i]) * int(elements[i + 1]) > 0:
-                    data = [elements[i]]
-                    data.append(elements[i + 1])
-                    break
-    return data
+			data = [elements[i]]
+			data.append(elements[i + 1])
+                break
+return data
 
 def print_data(output_data):
-    for i in output_data:
-        print (i, end=' ')
+	for i in output_data:
+		print (i, end=' ')
 print_data(operation_data(input_data()))
 #-----------------------------------------
 
@@ -104,18 +104,18 @@ print_data(operation_data(input_data()))
 Крайние элементы списка никогда не учитываются, поскольку у них недостаточно соседей.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
     
 def operation_data(elements):
     count=0
     for i in range(1, len(elements)-1):
                 if int(elements[i-1])<int(elements[i]) and int(elements[i])>int(elements[i + 1]) :
                     count+=1
-    return count
+return count
 
 def print_data(output_data):
-    print (output_data)
+	print (output_data)
 print_data(operation_data(input_data()))
 #-----------------------------------------
 
@@ -127,23 +127,19 @@ print_data(operation_data(input_data()))
 выведите индекс первого из них.
 """
 def input_data():
-    data = input().split()
-    return data
-def operation_data(elements):
+	data = input().split()
+	return data
 
-    data = []
-    max = elements[0]
-    data = [max]
-    data.append(0)
-    for i in range(1, len(elements)):
+def operation_data(elements):
+	data = []max = elements[0]
+	data = [max]data.append(0)
+	for i in range(1, len(elements)):
         if int(max_elements) < int(elements[i]):
-            max = elements[i]
-            data = [max]
-            data.append(i) 
-    return data
+		max = elements[i]data = [max]data.append(i) 
+return data
     
 def print_data(output_data):
-    for i in output_data:
+	for i in output_data:
         print (i, end=' ')
         
 print_data(operation_data(input_data()))
@@ -162,18 +158,17 @@ print_data(operation_data(input_data()))
 то он должен встать после них.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
+
 
 
 def operation_data(elements):
-
-    hight = int(input())
-    position = 0
-    while position < len(elements) and int(elements[position]) >= hight:
-
-       position += 1
-    return position
+	hight = int(input())
+	position = 0
+	while position < len(elements) and int(elements[position]) >= hight:
+		position += 1
+		return position
 
 def print_data(output_data):
         print (output_data + 1)
@@ -187,15 +182,15 @@ print_data(operation_data(input_data()))
 Определите, сколько в нем различных элементов.
 """
 def input_data():
-    data=input().split()
-    return data
+	data = input().split()
+	return data
 
 def operation_data(elements):
-    count=0
-    for i in range(0, len(elements)-1):
-        if int(elements[i]) != int(elements[i + 1]):
-            count+=1
-    return count
+	count=0
+	for i in range(0, len(elements)-1):
+		if int(elements[i]) != int(elements[i + 1]):
+			count+=1
+return count
 
 def print_data(output_data):
         print (output_data + 1)
@@ -210,17 +205,17 @@ print_data(operation_data(input_data()))
 Если элементов нечетное число, то последний элемент остается на своем месте.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
     
 def operation_data(elements):
-    for i in range(0, len(elements)//2):
-	elements[i*2] = elements[i*2 + 1] and elements[i*2 + 1]=elements[i*2]
-    return element
+	for i in range(0, len(elements)//2):
+		elements[i*2] = elements[i*2 + 1] and elements[i*2 + 1]=elements[i*2]
+		return element
 
 def print_data(output_data):
-    for i in output_data:
-        print (i, end=' ')
+	for i in output_data:
+		print (i, end=' ')
 
 print_data(operation_data(input_data()))
 
@@ -231,27 +226,27 @@ print_data(operation_data(input_data()))
 Поменяйте местами минимальный и максимальный элемент этого списка.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
 
 def operation_data(elements):
-    max = elements[0]
-    min = elements[0]
-    ind_min = 0
-    ind_max = 0
-    for i in range(0, len(elements)):
-        if  int(min) > int(elements[i]):
-            min = elements[i]
-            ind_min = i
-        if  int(max) < int(elements[i]):
-            max = elements[i]
-            ind_max = i
-    elements[ind_min], elements[ind_max] = elements[ind_max], elements[ind_min]    
-    return elements
+	max = elements[0]
+	min = elements[0]
+	ind_min = 0
+	ind_max = 0
+	for i in range(0, len(elements)):
+		if  int(min) > int(elements[i]):
+			min = elements[i]
+			ind_min = i
+        	if  int(max) < int(elements[i]):
+		max = elements[i]
+		ind_max = i
+		elements[ind_min], elements[ind_max] = elements[ind_max], elements[ind_min]    
+return elements
 
 def print_data(output_data):
-    for i in output_data:
-        print (i, end=' ')
+	for i in output_data:
+		print (i, end=' ')
 
 print_data(operation_data(input_data()))
 
@@ -271,19 +266,19 @@ print_data(operation_data(input_data()))
 Также не следует использовать метод pop(k) с параметром.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
     
 def operation_data(elements):
-    k = int(input())
-    for i in range(k, len(elements) - 1):
-        elements[i] = elements[i + 1]
-    elements.pop()
-    return elements
+	k = int(input())
+	for i in range(k, len(elements) - 1):
+		elements[i] = elements[i + 1]
+		elements.pop()
+ return elements
     
 def print_data(output_data):
-    for i in output_data:
-        print (i, end=' ')
+	for i in output_data:
+		print (i, end=' ')
         
 print_data(operation_data(input_data()))
 
@@ -302,20 +297,20 @@ print_data(operation_data(input_data()))
 при выводе и не создавая дополнительного списка.
 """
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
 
 def operation_data(elements):
-    data = input().split()
-    elements.append(data[1])
-    for i in range(len(elements) - 1, int(data[0]), -1):
-        elements[i] = elements[i - 1]
-    elements[int(data[0])] = int(data[1])
-    return elements
+	data = input().split()
+	elements.append(data[1])
+	for i in range(len(elements) - 1, int(data[0]), -1):
+		elements[i] = elements[i - 1]
+		elements[int(data[0])] = int(data[1])
+return elements
 
 def print_data(output_data):
-   for i in output_data:
-        print (i, end=' ')
+	for i in output_data:
+		print (i, end=' ')
         
 print_data(operation_data(input_data()))
 
@@ -329,18 +324,18 @@ print_data(operation_data(input_data()))
 """
 #-----------------------------------------
 def input_data():
-    data = input().split()
-    return data
+	data = input().split()
+	return data
     
 def operation_data(elements):
-    count=0
-    for i in range(0, len(elements)-1):
-        n=i
-        n+=1
-        for n in range(n, len(elements)):
-	        if elements[n]==elements[i]:
-	            count+=1
-    return count
+	count=0
+	for i in range(0, len(elements)-1):
+		n=i
+		n+=1
+		for n in range(n, len(elements)):
+			if elements[n]==elements[i]:
+				count+=1
+return count
 
 def print_data(output_data):
         print (output_data)
@@ -354,6 +349,33 @@ print_data(operation_data(input_data()))
 Элементы нужно выводить в том порядке, 
 в котором они встречаются в списке.
 """
+def input_data():
+	data = input().split()
+return data
+
+    
+
+def operation_data(elements):data=[]
+	for i in range(0, len(elements)):
+		counter = 0
+		for j in range(0, len(elements)):
+			if elements[i] == elements[j]:
+				counter += 1
+
+        	if counter == 1:
+			data.append(elements[i])
+
+return data
+  
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+        
+print_data(operation_data(input_data()))            
+
 #-----------------------------------------
 
 #task15--------------------------
@@ -368,6 +390,15 @@ N кеглей выставили в один ряд, занумеровав и�
 Программа должна вывести последовательность из N символов, где j-й символ 
 есть “I”, если j-я кегля осталась стоять, или “.”, если j-я кегля была сбита.
 """
+s = input().split(' ')
+outs = ["I" for i in range(int(s[0]))]
+for i in range(int(s[1])):
+	ns = input().split(' ')
+	for f in range(int(ns[0])-1, int(ns[1])):
+		outs[f] = "."
+for i in outs:
+	print(i, end='')
+
 #-----------------------------------------
 #task16--------------------------
 """
@@ -379,4 +410,15 @@ N кеглей выставили в один ряд, занумеровав и�
 каждое число от 1 до 8 — координаты 8 ферзей. 
 Если ферзи не бьют друг друга, выведите слово NO, иначе выведите YES.
 """
+list1 = []
+list2 = []
+for i in range(8):
+	s = input().split(' ')
+	s[0] = int(s[0])s[1] = int(s[1])
+	list1.append(s[0])
+	list2.append(s[1])
+if len(list1) == len(set(list1)) and len(list2) == len(set(list2)):
+	print('NO')
+else:
+	print('YES')
 #-----------------------------------------
