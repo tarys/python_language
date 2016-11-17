@@ -318,6 +318,96 @@ def operation_data(elements):
     for i in range(len(elements) - 1, int(data[0]), -1):
 #--------------------------------------------------------------
 
+
+#task13--------------------------
+"""
+Дан список чисел. Посчитайте, сколько в нем пар элементов, 
+равных друг другу. Считается, что любые два элемента, 
+равные друг другу образуют одну пару, которую необходимо посчитать.
+"""
+def input_data():
+
+    data = input().split()
+
+    return data
+
+    
+
+def operation_data(elements):
+
+    suma=0
+
+    for j in range(0,len(elements)):
+
+        b=elements[j]
+
+        for i in range(j+1,len(elements)):
+
+            if b==elements[i]:
+
+                suma+=1
+
+    return suma
+
+    
+
+def print_data(output_data):
+
+        print (output_data)
+
+        
+
+print_data(operation_data(input_data()))
+#-----------------------------------------
+
+
+#task14--------------------------
+"""
+Дан список. Выведите те его элементы, 
+которые встречаются в списке только один раз. 
+Элементы нужно выводить в том порядке, 
+в котором они встречаются в списке.
+"""
+def input_data():
+
+    data = input().split()
+
+    return data
+
+    
+
+def operation_data(elements):
+    data=[]
+
+    for i in range(0, len(elements)):
+
+        counter = 0
+
+        for j in range(0, len(elements)):
+
+            if elements[i] == elements[j]:
+
+                counter += 1
+
+        if counter == 1:
+
+            data.append(elements[i])
+
+    return data
+ 
+    
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+        
+print_data(operation_data(input_data()))            
+
+#-----------------------------------------
+
  
 #task15---------------------------------------------------------
  '''
