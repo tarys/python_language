@@ -1,6 +1,6 @@
 #task1--------------------------------------------
 """
-Выведите все элементы списка с четными индексами
+Display all items in the list with even indices (ie, A [0], A [2], A [4], ...).
 """
 s=input()
 list=s.split( )
@@ -11,7 +11,7 @@ for element in list:
 #-------------------------------------------------
 #task2--------------------------------------------
 """
-Выведите все четные элементы списка. При этом используйте цикл for, перебирающий элементы списка, а не их индексы!
+Print a list of all the even-numbered elements. In this case, use a for loop to iterate over the list, not their indices!
 """
 s=input()
 list=s.split()
@@ -24,7 +24,7 @@ for element in list:
 #-------------------------------------------------
 #task3--------------------------------------------
 """
-Дан список чисел. Выведите все элементы списка, которые больше предыдущего элемента.
+Given a list of numbers. Print a list of all the elements that are larger than the previous element.
 """
 s=input()
 list=s.split( )
@@ -39,7 +39,8 @@ for element in list:
 #-------------------------------------------------
 #task4--------------------------------------------
 """
-Дан список чисел. Если в нем есть два соседних элемента одного знака, выведите эти числа. Если соседних элементов одного знака нет — не выводите ничего. Если таких пар соседей несколько — выведите первую пару.
+Given a list of numbers. If it contains two adjacent elements of one sign, display these numbers.
+If adjacent elements of one sign not - do not output anything. If there are several pairs of neighbors - print the first pair.
 """
 def input_data():
     data = input().split()
@@ -62,7 +63,8 @@ print_data(operation_data(input_data()))
 #-------------------------------------------------
 #task5--------------------------------------------
 """
-Дан список чисел. Определите, сколько в этом списке элементов, которые больше двух своих соседей, и выведите количество таких элементов. Крайние элементы списка никогда не учитываются, поскольку у них недостаточно соседей.
+Given a list of numbers. Determine how much of this list of items that are more than two of their neighbors, and bring the number of such elements.
+The last elements of the list is never taken into account, since they lack the neighbors.
 """
 list_new=[]
 s=input()
@@ -80,7 +82,8 @@ print(list_new)
 #-------------------------------------------------
 #task6--------------------------------------------
 """
-Дан список чисел. Выведите значение наибольшего элемента в списке, а затем индекс этого элемента в списке. Если наибольших элементов несколько, выведите индекс первого из них.
+Given a list of numbers. Print the value of the largest element in the list, and then the index of the item in the list.
+If the largest element, output index of the first of them.
 """
 s=input()
 list=s.split( )
@@ -102,8 +105,10 @@ print(g1)
 #-------------------------------------------------
 #task7--------------------------------------------
 """
-Петя перешёл в другую школу. На уроке физкультуры ему понадобилось определить своё место в строю. Помогите ему это сделать.
-Программа получает на вход невозрастающую последовательность натуральных чисел, означающих рост каждого человека в строю. После этого вводится число X – рост Пети. Все числа во входных данных натуральные и не превышают 200. Выведите номер, под которым Петя должен встать в строй. Если в строю есть люди с одинаковым ростом, таким же, как у Пети, то он должен встать после них.
+Peter moved to another school. In gym class he needed to define its place in the ranks. Help him to do it.
+The program receives the input of a non-increasing sequence of natural numbers, meaning the growth of each person in the ranks.
+After this number is entered X - Petit growth. All numbers in the input natural and not exceed 200.
+Display the number with which Peter has to get up in the system. If there are people in the ranks of the same stature, the same as at Petit, it must stand up after them.
 """
 s=input()
 list=s.split( )
@@ -128,7 +133,8 @@ print(j)
 #-------------------------------------------------
 #task8--------------------------------------------
 """
-Дан список, упорядоченный по неубыванию элементов в нем. Определите, сколько в нем различных элементов.
+Given a list, ordered by non-decreasing order of elements in it.
+Determine how much various elements therein.
 """
 s=input()
 list=s.split( )
@@ -143,7 +149,8 @@ print(j)
 #-------------------------------------------------
 #task9--------------------------------------------
 """
-Переставьте соседние элементы списка (A[0] c A[1], A[2] c A[3] и т. д.). Если элементов нечетное число, то последний элемент остается на своем месте.
+Move the neighboring cells list (A [0] c A [1], A [2] c A [3], and so on. D.).
+If an odd number of elements, the last element is in its place.
 """
 s=input()
 list=s.split( )
@@ -167,7 +174,8 @@ else:
 #-------------------------------------------------
 #task10--------------------------------------------
 """
-В списке все элементы различны. Поменяйте местами минимальный и максимальный элемент этого списка.
+In all the different elements of the list.
+Swap the minimum and maximum element of this list.
 """
 def input_data():
     data = input().split()
@@ -196,9 +204,12 @@ print_data(operation_data(input_data()))
 #-------------------------------------------------
 #task11--------------------------------------------
 """
-Дан список из чисел и индекс элемента в списке k. Удалите из списка элемент с индексом k, сдвинув влево все элементы, стоящие правее элемента с индексом k.
-Программа получает на вход список, затем число k. Программа сдвигает все элементы, а после этого удаляет последний элемент списка при помощи метода pop() без параметров.
-Программа должна осуществлять сдвиг непосредственно в списке, а не делать это при выводе элементов. Также нельзя использовать дополнительный список. Также не следует использовать методpop(k) с параметром.
+Given a list of numbers, and the index k in the list.
+Remove from the list item with the k index, sliding to the left all the elements, standing to the right of the element with index k.
+The program receives the list of input, then number k.
+The program moves all the elements, and then removes the last element of the list using the pop () method with no parameters.
+The program must implement a shift directly into the list, instead of doing so in the derivation of the elements.
+You also can not use the additional list. Also, do not use the method pop (k) with a parameter ..
 """
 s=input()
 list=s.split( )
@@ -212,9 +223,14 @@ print(list)
 #-------------------------------------------------
 #task12--------------------------------------------
 """
-Дан список целых чисел, число k и значение C. Необходимо вставить в список на позицию с индексом k элемент, равный C, сдвинув все элементы, имевшие индекс не менее k, вправо.
-Посколько при этом количество элементов в списке увеличивается, после считывания списка в его конец нужно будет добавить новый элемент, используя метод append.
-Вставку необходимо осуществлять уже в считанном списке, не делая этого при выводе и не создавая дополнительного списка.
+Given a list of integers, the integer k and the value C.
+Must be inserted into the list at position index k element
+equal to C, moving all the elements had no less than the index k, the right.
+Since the number of elements in this list increases,
+after reading the list to the end you will need to add a new element,
+using the append method.В 
+The insert should be implemented already in the read list
+Doing this in the derivation and without creating an additional list.
 """
 def input_data():
 
@@ -245,7 +261,8 @@ print_data(operation_data(input_data()))
 #-------------------------------------------------
 #task13--------------------------------------------
 """
-Дан список чисел. Посчитайте, сколько в нем пар элементов, равных друг другу. Считается, что любые два элемента, равные друг другу образуют одну пару, которую необходимо посчитать.
+Given a list of numbers. Count how many pairs of elements in it that are equal to each other.
+It is believed that any two elements are equal to each other to form a pair that you want to count.
 """
 s=input()
 list=s.split( )
@@ -263,7 +280,8 @@ print(amount)
 #-------------------------------------------------
 #task14--------------------------------------------
 """
-Дан список. Выведите те его элементы, которые встречаются в списке только один раз. Элементы нужно выводить в том порядке, в котором они встречаются в списке.
+Dan list. Bring those elements that appear in the list only once.
+The elements you want to display in the order in which they appear in the list.
 """
 s=input()
 list=s.split( )
@@ -281,28 +299,33 @@ while i<len:
 #-------------------------------------------------
 #task15--------------------------------------------
 """
-N кеглей выставили в один ряд, занумеровав их слева направо числами от 1 до N. Затем по этому ряду бросили K шаров, при этом i-й шар сбил все кегли с номерами от li до ri включительно. Определите, какие кегли остались стоять на месте.
-Программа получает на вход количество кеглей N и количество бросков K. Далее идет K пар чисел li, ri, при этом 1? li? ri? N.
-Программа должна вывести последовательность из N символов, где j-й символ есть “I”, если j-я кегля осталась стоять, или “.”, если j-я кегля была сбита.
+N pins put in one number, numbered from left to right with numbers from 1 to N.
+Then, on the number of balls thrown K, while the i-th ball knocked down all the pins with the numbers to li ri inclusive.
+Determine which pins are left standing on the spot.
+The program receives the input of the number of pins N and the number of shots K.
+Next comes the K pairs of numbers li, ri, while 1в‰¤ liв‰¤ riв‰¤ N.В 
+The program should print a sequence of N characters, where the j-th symbol is "I",
+if the j-I pin remained standing, or ".", if the j-pin I was hit.
 """
 Def form_of_list(number):
 	List=[]
-	List=[‘I’ for I in range(number)]
+	List=[вЂIвЂ™ for I in range(number)]
 	Return(list)
 Number,count_of_shots=input().split()
 List=form_of_list(int(number))
 For I in range (int(count_of_shots)):
 	Start_pos,final_pos=input().splint()
 	For j in range(int(start_pos)-1, int(final_pos)):
-		List_[j]=’.’
+		List_[j]=вЂ™.вЂ™
 For element in list:
-	Print(element, end=’ ‘)
+	Print(element, end=вЂ™ вЂ)
 #-------------------------------------------------
 #task16--------------------------------------------
 """
-Известно, что на доске 8?8 можно расставить 8 ферзей так, чтобы они не били друг друга. Вам дана расстановка 8 ферзей на доске, определите, есть ли среди них пара бьющих друг друга.
-Программа получает на вход восемь пар чисел, каждое число от 1 до 8 — координаты 8 ферзей. Если ферзи не бьют друг друга, выведите слово NO, иначе выведите YES.
-
+It is known that on a board of 8 Г— 8 can arrange 8 queens so that they do not hit each other.
+You are given a balance of 8 queens on the board, determine whether there is among them a pair of beating each other.
+The program takes an eight pairs of numbers, each number from 1 to 8 - 8 queens coordinates.
+If the queen did not hit each other, output word of NO, otherwise print YES.
 """
 def form_list_(size):#this function create a new 2-D list sizeXsize (this function created by me)
      list_ = (size * '0 ').split()
