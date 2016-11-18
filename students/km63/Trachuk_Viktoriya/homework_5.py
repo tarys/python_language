@@ -16,11 +16,7 @@ print(res)
 #-------------------------------------------------
 #task2--------------------------------------------
 """
-Äàíî äåéñòâèòåëüíîå ïîëîæèòåëüíîå ÷èñëî a è öåëîe ÷èñëî n.
-
-Âû÷èñëèòå an. Ðåøåíèå îôîðìèòå â âèäå ôóíêöèè power(a, n).
-
-Ñòàíäàðòíîé ôóíêöèåé âîçâåäåíèÿ â ñòåïåíü ïîëüçîâàòüñÿ íåëüçÿ.
+Given a positive real number and a whole number n. Calculate an. The solution presented in the form function power (a, n).
 """
 def power(a,n):
 	if n==1:
@@ -39,9 +35,8 @@ print(res)
 
 #task3--------------------------------------------
 """
-Äàíî äåéñòâèòåëüíîå ïîëîæèòåëüíîå ÷èñëî a è öåëîå íåîòðèöàòåëüíîå ÷èñëî n.
- Âû÷èñëèòå an íå èñïîëüçóÿ öèêëû, âîçâåäåíèå â ñòåïåíü ÷åðåç ** è ôóíêöèþ math.pow(),
- à èñïîëüçóÿ ðåêóððåíòíîå ñîîòíîøåíèå an=a*an-1.
+Given a positive real number and a non-negative number n.
+Calculate an without using loops, powers and function through ** math.pow (), and using the recurrence relation an = a⋅an-1.
 """
 def power(a, n):
 
@@ -65,9 +60,8 @@ print(res)
 
 #task4----------------------------------------------
 """
-Íàïèøèòå ôóíêöèþ fib(n),
- êîòîðàÿ ïî äàííîìó öåëîìó íåîòðèöàòåëüíîìó
- n âîçâðàùàåò n-e ÷èñëî Ôèáîíà÷÷è.
+Write a function fib (n), which is on the non-negative integer n returns n-e Fibonacci number.
+In this task, you can not use loops - use recursion.
 """
 
 def fib(n):
