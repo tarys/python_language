@@ -1,0 +1,128 @@
+(1)
+#Progaram that sums three numbers inputed by user
+
+#input
+User_1st_number = float(input("Enter first real number - "))
+User_2nd_number = float(input("Enter second real number - "))
+User_3rd_number = float(input("Enter third real number - "))
+
+#main
+Sum = User_1st_number + User_2nd_number + User_3rd_number
+
+#output
+print(User_1st_number,"+",User_2nd_number,"+",User_3rd_number,"=",Sum)
+
+
+
+
+
+
+(2)
+
+#Program that counts square area of right triangle by two ctatetus inputed by user
+
+#input
+First_cathetus = float(input("Enter lenght of first cathetus - "))
+Second_cathetus = float(input("Enter lenght of second cathetus - "))
+
+#main
+Square_area = (First_cathetus * Second_cathetus)/ 2
+
+#output
+print("Square area of right triangle is ",Square_area)
+
+
+
+
+
+
+
+(3)
+#Program that inputs next and previous number to user's number
+
+#input
+User_number = int(input("Enter integer number - "))
+
+#output
+print("The next number to the number",User_number,"is",User_number+1)
+print("The previous number to the number",User_number,"is",User_number-1)
+
+
+
+
+
+
+
+(4)
+#Program of greeting the user
+
+#input
+User_name = input("What's your name?\n")
+
+#output
+print("Hello,",User_name)
+
+
+
+
+(5)
+#Progarm that convters minutes entered by user in hours and minutes
+
+#input
+quantity_of_minutes = int(input("Enter quantity of minutes - "))
+
+#main
+quantity_of_hours = int(quantity_of_minutes / 60)
+rest_of_minutes = quantity_of_minutes - quantity_of_hours * 60
+
+#output
+print("Time after midnight:",quantity_of_hours,"hours and",rest_of_minutes,"minutes")
+
+
+
+
+
+(6)
+#Program that counts quantity of apples for each student and rest of apples
+#Quantity of apples and students inputs by user
+
+#input
+quantity_of_apples = int(input("Enter quantity of apples - "))
+quantity_of_students = int(input("Enter quantity of students - "))
+
+#main
+apples_for_each_student = int(quantity_of_apples / quantity_of_students)
+rest_of_apples = quantity_of_apples - (apples_for_each_student * quantity_of_students)
+
+#output
+print("Apples for each student -",apples_for_each_student)
+print("Rest of apples - ",rest_of_apples)
+
+
+
+
+(7)
+#Program that counts how many tables school should buy for their pupils
+
+# input
+quantity_of_pupils_in_1st_class = int(input("Enter quantity of pupils in 1st class - "))
+quantity_of_pupils_in_2nd_class = int(input("Enter quantity of pupils in 2nd class - "))
+quantity_of_pupils_in_3rd_class = int(input("Enter quantity of pupils in 3rd class - "))
+
+
+#main
+def quantity_of_tables(A):
+    int_number_of_tables = int(A / 2)
+    rest_of_tables = A % 2
+    if rest_of_tables > 0:
+        int_number_of_tables+=1
+        return int_number_of_tables
+    else:
+        return int_number_of_tables
+
+Alltogether_tables = quantity_of_tables(quantity_of_pupils_in_1st_class) + quantity_of_tables(quantity_of_pupils_in_2nd_class) + quantity_of_tables(quantity_of_pupils_in_3rd_class)
+
+
+#output
+print("Entire quantity of tables that school should buy for their pupils -",Alltogether_tables)
+
