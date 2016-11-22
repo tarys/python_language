@@ -1,0 +1,103 @@
+#Цикл for
+#Задача 1. «Ряд - 1»
+#Ввод чисел
+a=int(input())
+b=int(input())
+b+=1
+#Установка последовательности
+for a in range(a,b):
+    print(a)
+    
+#Задача 2.«Ряд - 2»
+#Ввод чисел
+a=int(input())
+b=int(input())
+#Условие
+if a<=b:
+#Последовательность
+    for i in range(a,b+1):
+        print(i)
+#Дополнительное условие
+else:
+    for i in range(a,b-1,-1):
+        print(i)
+#Задача 3. 
+
+a=int(input())
+b=int(input())
+for i in range(a,b-1,-1):
+    if i%2!=0:
+        print(i)
+
+#Задача 4.
+
+sum=0
+for i in range(10):
+    sum+=int(input())
+print(sum)
+
+#Задача 5.
+
+sum=0
+n=int(input())
+for i in range(n):
+    sum+=int(input())
+print(sum)
+
+#Задача 6.
+
+sum=0
+n=int(input())
+for i in range(n+1):
+    sum+=i**3
+print(sum)
+
+#Задача 7.
+
+n=int(input())
+sum=1
+for i in range(n):
+    sum*=i+1
+print(sum)
+
+#Задача 8.
+
+n=int(input())
+sum=0
+for i in range(n):
+    x=int(input())
+    if x==0:
+        sum+=1
+print(sum)
+
+#Задача 9.
+
+n=int(input())
+sum=0
+for i in range(n):
+    fact=1
+    for j in range(i+1):
+        fact*=j+1
+    sum+=fact
+print(sum)
+
+#Задача 10.
+
+n=int(input())
+for i in range(n):
+    for j in range(i+1):
+        print(j+1,end='')
+    print()
+
+#Задача 11.
+
+n=int(input())
+summ=0 
+needed_sum=0
+for i in range(n-1):
+    summ+=int(input())
+    needed_sum+=i+1
+needed_sum+=n
+print(needed_sum-summ)
+
+
