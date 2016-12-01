@@ -99,13 +99,19 @@ for row in a:
 Решение оформите в виде функции swap_columns(a, i, j).
 
 """ 
+def swap_columns(a,i,j):
+    for q in range(n):
+            a[q][i],a[q][j] = a[q][j],a[q][i]
+    return a
+ 
+    
 n, m = [int(i) for i in input().split()]
 a = [[int(j) for j in input().split()] for i in range(n)]
 i, j = [int(i) for i in input().split()]
-for q in range(n):
-    a[q][i],a[q][j] = a[q][j],a[q][i]
+a=(swap_columns(a,i,j))
 for row in a:
-    print(' '.join([str(a) for a in row]))
+        print(' '.join([str(a) for a in row]))
+
 #---------------------------------------------------------------— 
 
 
