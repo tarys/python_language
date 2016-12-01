@@ -14,14 +14,14 @@ maxheight=0
 height,weight = input().split()
 
 for i in range(int(height)):
-    massive.append(input().split())#making of 2d massive
+    massive.append(input().split())
     
-for i in range(int(height)):#iterator of lines
-    for j in range(int(weight)):#iterator of columns
-        if int(massive[i][j])>int(massive[maxheight][maxweight]):#operation of 'porivnyannya'
+for i in range(int(height)):
+    for j in range(int(weight)):
+        if int(massive[i][j])>int(massive[maxheight][maxweight]):
             maxheight=i
             maxweight=j
-print(maxheight,maxweight)#print of result
+print(maxheight,maxweight)
 
 #-----------------------------------------------------------------
 
@@ -69,7 +69,7 @@ for i in range(number):
 
 
 
-def list_create(n,m,list_):#creating o list
+def list_create(n,m,list_):
     for i in range(int(n)):
         list_.append(('. '*int(m)).split())
     return list_
