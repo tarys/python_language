@@ -1,0 +1,46 @@
+#task1-----------------------------------------------------------------------------------------------------------------------------
+
+"""
+Намалювати серце, повернути.
+"""
+
+#input 
+n = int(input('Enter size of picture: '))
+    
+#creation of left part of heart
+matrix_top = [[[' ']*(n-i-2) + ['*']*i*2 + [' ']*(n-i+2)] for i in range(0, n-2, 2)]
+matrix_central = [[['*']*(2*n-2) + [' ']*2]]
+matrix_down = [[[' ']*i + ['*']*(n*2-i)] for i in range(n*2)]
+
+matrix = matrix_top + matrix_central + matrix_down
+
+#simplification of matrix
+picture_left = []
+for i in range(len(matrix)):
+    picture_left.append(matrix[i][0])
+
+copy = [[' ']*n*2 for i in range(len(picture_left))]
+for i in range(len(picture_left)):
+    for j in range(n*2):
+        copy[i][j] = picture_left[i][j]
+
+picture_right = []
+for row in copy:
+    row.reverse()
+    picture_right.append(row)
+
+#union  
+picture = []
+for i in range(len(picture_left)):
+    picture.append(picture_left[i] + picture_right[i])
+    
+#transpose
+heart = [[' ']*len(picture) for i in range(n*2)]
+for i in range(len(picture)):
+    for j in range(n*2):
+        heart[j][i] = picture[i][j]
+
+#output 
+for row in heart:
+    print(''.join(row)) 
+#-------------------------------------------------------------------------------------------------------------------------------
