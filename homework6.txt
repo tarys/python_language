@@ -1,0 +1,406 @@
+1.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    data = []
+
+    for i in range(0, len(elements), 2):
+
+        data.append(elements[i])
+
+    return data
+
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+
+2.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    data = []
+
+    for i in elements:
+
+        if int(i) % 2 == 0:
+
+            data.append(i)
+
+    return data
+
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+
+3.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    data = []
+
+    for i in range(0, len(elements)):
+
+        if i < len(elements)-1:
+
+            if int(elements[i]) < int(elements[i + 1]):
+
+                data.append(elements[i +1])
+
+    return data
+
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+4.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+def operation_data(elements):
+
+    data = []
+
+    for i in range(0, len(elements)):
+
+        if len(data) == 0:
+
+            if i < len(elements)-1:
+
+                if int(elements[i]) * int(elements[i + 1]) > 0:
+                    data = [elements[i]]
+
+                    data.append(elements[i + 1])
+
+    return data
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+
+
+
+
+
+
+
+
+
+5.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    counter = 0
+
+    for i in range(1, len(elements)-1):
+
+        if int(elements[i-1]) < int(elements[i]) > int(elements[i+1]):
+            counter +=1
+
+    return counter
+ 
+
+
+def print_data(output_data):
+
+    print (output_data)
+
+
+
+print_data(operation_data(input_data()))
+
+
+6.def input_data():
+    data = input().split()
+    return data
+    
+def operation_data(elements):
+
+    data = []
+
+    max_elements = elements[0]
+
+    data = [max_elements]
+
+    data.append(0)
+
+    for i in range(1, len(elements)):
+
+        if int(max_elements) < int(elements[i]):
+
+            max_elements = elements[i]
+
+            data = [max_elements]
+
+            data.append(i)
+       
+    return data
+    
+def print_data(output_data):
+    for i in output_data:
+        print (i, end=' ')
+
+print_data(operation_data(input_data()))
+
+7.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+def operation_data(elements):
+
+    hight = int(input())
+
+    position = 0
+
+    while position < len(elements) and int(elements[position]) >= hight:
+
+        position += 1
+
+    return position
+
+
+def print_data(output_data):
+
+        print (output_data + 1)
+
+
+
+print_data(operation_data(input_data()))
+
+
+8.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    counter = 0
+
+    for i in range(0, len(elements)-1):
+
+        if int(elements[i]) != int(elements[i + 1]):
+
+            counter +=1
+
+    return counter
+
+
+
+def print_data(output_data):
+
+        print (output_data + 1)
+
+
+
+print_data(operation_data(input_data()))
+
+
+9.def input_data():
+
+    data = input().split()
+
+    return data
+
+    
+
+def operation_data(elements):
+
+    for i in range(0, len(elements)//2):
+
+	elements[i*2], elements[i*2 + 1] = elements[i*2 + 1], elements[i*2]
+    return element
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+10.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+
+def operation_data(elements):
+
+    max_element = elements[0]
+
+    min_element = elements[0]
+
+    index_min = 0
+
+    index_max = 0
+
+    for i in range(0, len(elements)):
+
+        if  int(min_element) > int(elements[i]):
+
+            min_element = elements[i]
+
+            index_min = i
+
+        if  int(max_element) < int(elements[i]):
+
+            max_element = elements[i]
+
+            index_max = i
+    
+    elements[index_min], elements[index_max] = elements[index_max], elements[index_min]    
+    return elements
+
+
+
+def print_data(output_data):
+
+    for i in output_data:
+
+        print (i, end=' ')
+
+
+
+print_data(operation_data(input_data()))
+
+
+
+11.def input_data():
+
+    data = input().split()
+
+    return data
+
+
+def operation_data(elements):
+
+    k = int(input())
+
+    for i in range(k, len(elements) - 1):
+
+        elements[i] = elements[i + 1]
+
+    elements.pop()
+
+    return elements
+    
+
+def print_data(output_data):
+
+    for i in output_data:
+        print (i, end=' ')
+        
+
+
+print_data(operation_data(input_data()))
+
+
+
+12.def input_data():
+
+    data = input().split()
+
+    return data
+
+    
+
+def operation_data(elements):
+
+    data = input().split()
+
+    elements.append(data[1])
+
+    for i in range(len(elements) - 1, int(data[0]), -1):
+
+        elements[i] = elements[i - 1]
+
+    elements[int(data[0])] = int(data[1])
+
+    return elements
+
+    
+
+def print_data(output_data):
+   for i in output_data:
+
+        print (i, end=' ')
+  
+      
+
+print_data(operation_data(input_data()))
+
+
+
+
