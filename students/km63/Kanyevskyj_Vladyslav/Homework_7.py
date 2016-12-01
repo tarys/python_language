@@ -87,21 +87,21 @@ for i in range(n):
 На главной диагонали должны быть записаны числа 0. На двух диагоналях, прилегающих к главной, числа 1. 
 На следующих двух диагоналях числа 2, и т.д. 
 """
-size = int(input())
-matrix = [0] * size
-for i in range(size):
-    matrix[i] = [0] * size
-for k in range(1, size):
-    for i in range(size-k):
-        for j in range(size-k):
-            if i == j:
-                matrix[i][j+k] = k
-                matrix[i+k][j] = k
-for i in range(size):
-    for j in range(size):
-        print(matrix[i][j], end=' ')
-    print()
-print_elements(even_elements(input_elements()))
+n=int(input())
+A = [ ["."] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        for k in range(n):
+            if i==j:
+                A[i][j]=0
+            elif j-k==i or i==j+k:
+                A[i][j]=k
+            
+
+for i in range(n):
+    for j in range(n):
+        print(A[i][j], end=' ')
+    print() 
 #-----------------------------------------------------------------
 
 #task5------------------------------------------------------------------------------------------------------------------------
@@ -131,31 +131,26 @@ for row in a:
 
 #task6------------------------------------------------------------
 """
-Äàí äâóìåðíûé ìàññèâ è äâà ÷èñëà: i è j. Ïîìåíÿéòå â ìàññèâå ñòîëáöû ñ íîìåðàìè i è j è âûâåäèòå ðåçóëüòàò.
-Ïðîãðàììà ïîëó÷àåò íà âõîä ðàçìåðû ìàññèâà n è m, çàòåì ýëåìåíòû ìàññèâà, çàòåì ÷èñëà i è j.
-Ðåøåíèå îôîðìèòå â âèäå ôóíêöèè swap_columns(a, i, j). 
+Задача «Поменять столбцы»
+Условие
+Дан двумерный массив и два числа: i и j. Поменяйте в массиве столбцы с номерами i и j и выведите результат.
+
+Программа получает на вход размеры массива n и m, затем элементы массива, затем числа i и j.
+
+Решение оформите в виде функции swap_columns(a, i, j).
+
 """
-def swap_columns(matrix, i, j):
-    for z in range (a):
-        buf=matrix[z][i]
-        matrix[z][i]=matrix[z][j]
-        matrix[z][j]=buf
-    return
-size = input().split()
-a=int(size[0])
-b=int(size[1])
-matrix = []
-for k in range(a):
-    row = input().split()
-    for k in range(len(row)):
-        row[k] = int(row[k])
-    matrix.append(row)
-size = input().split()
-i=int(size[0])
-j=int(size[1])
-swap_columns(matrix, i, j)
-for i in range(a):
-    for j in range(b):
-        print(matrix[i][j], end=' ')
-    print()
+def swap_columns(a, i, j):
+    for p in range(n):
+            a[p][j],a[p][i]=a[p][i],a[p][j]
+    return a
+
+n,m=[int(i) for i in input().split()]
+a=[[int(i) for i in input().split()]for j in range(n)]
+i,j=[int(i) for i in input().split()]
+a=swap_columns(a,i,j)
+for i in range(n):
+        for j in range(m):
+            print(a[i][j], end=' ')
+        print()    
 #-----------------------------------------------------------------
