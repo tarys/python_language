@@ -1,0 +1,222 @@
+1:
+n = int(input()) 
+x = 1 
+while x**2<=n: 
+print(x**2, end='') 
+
+x += 1 
+2:
+num = int(input()) 
+i = 2 
+while num%i != 0: 
+i += 1 
+print(i) 
+
+3:
+n = int(input()) 
+i = 0 
+two_power = 1 
+while (two_power*2)<n: 
+i += 1 
+two_power *= 2 
+
+print(i,two_power) 
+
+4:
+x = int(input()) 
+y = int(input()) 
+i = 1 
+tvar = x 
+while y>tvar: 
+tvar += tvar * 0.1 
+i += 1 
+print(i) 
+
+5:
+x = float(input()) 
+p = float(input()) 
+y = float(input()) 
+balance = x 
+i = 0 
+while balance < y: 
+balance += balance * p/100 
+balance = round(balance, 2) 
+i += 1 
+print(i) 
+
+6:
+i = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+i += 1 
+print(i)
+ 
+7:
+i = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+i += n 
+print(i) 
+
+8:
+i = 0 
+c = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+i += n 
+c += 1 
+print(i/c)
+ 
+9:
+i = 0 
+max = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+if max<n: 
+max = n 
+print(max) 
+
+10:
+i = 0 
+max = 0 
+max_i = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+if max<n: 
+max = n 
+max_i = i 
+i += 1 
+print(max_i)
+ 
+11:
+i = 0 
+evens = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+if n%2 == 0: 
+i += 1 
+print(i) 
+
+12:
+i = 0 
+prev = float('Inf') 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+if n > prev: 
+i += 1 
+prev = n 
+print(i) 
+
+13:
+i = 0 
+max = 0 
+n_max = 0 
+l = [] 
+while True: 
+n = int(input()) 
+l.append(n) 
+if n == 0: 
+break 
+l.sort() 
+print(l[-2]) 
+
+14:
+max = 0 
+max_i = 0 
+l = [] 
+k = 0 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+l.append(n) 
+if max<n: 
+max = n 
+for i in l: 
+if i == max: 
+k += 1 
+print(k) 
+15:
+n = int(input("")) 
+if n == 0: 
+print(0) 
+else: 
+f = [] 
+f.append(0) 
+f.append(1) 
+i = 2 
+while i<=n: 
+f.append(f[i-1] + f[i-2]) 
+i += 1 
+print(f[-1]) 
+
+16:
+x = int(input()) 
+f1 = 0 
+f2 = 1 
+n = 0 
+fibo = 0 
+while fibo != x: 
+fibo = f1 + f2 
+f2 = f1 
+f1 = fibo 
+n += 1 
+if fibo > x: 
+n = -1 
+break 
+print(n) 
+
+17:
+i = 0 
+max = 0 
+n_max = 0 
+l = [] 
+l2 = [0] 
+k = 1 
+while True: 
+n = int(input()) 
+if n == 0: 
+break 
+l.append(n) 
+for i in range(1, len(l)): 
+if l[i-1]
+== l[i]: 
+k += 1 
+else: 
+l2.append(k) 
+k = 1 
+l2.append(k) 
+l2.sort() 
+print(l2[-1]) 
+
+18:
+i = 1 
+up = 0 
+l = [] 
+suM = 0 
+while True: 
+x = int(input()) 
+if x == 0: 
+break 
+l.append(x) 
+suM += x 
+i += 1 
+s = suM/(i-1) 
+n = i-1 
+for i in l: 
+up += (i - s) ** 2 
+print((up/(n-1)) ** 0.5) 

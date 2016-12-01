@@ -1,0 +1,148 @@
+1:
+a=input( ) 
+b=input( )
+if a<b:
+    print(a)
+else:
+    print(b)
+
+2:
+x = float(input())
+if x > 0:
+    print(1)
+elif x < 0:
+    print(-1)
+else:
+    print(0)
+
+3:
+a=input( )
+b=input( )
+c=input( )
+if a < b:
+    if a < c:
+        #a < b, a < c
+        print(a)
+if b<a:
+    if b < c:
+        #b < a, b < c
+        print(b)
+if c < a:
+    if c < b:
+        # c < a, c < b
+        print(c)
+
+4:
+a=int(input( ))
+if (a//4):
+    #a//4
+    print("LEAP")
+else:
+    #a%100
+    Print ("COMMON")
+
+5:
+a=int(input( ))
+b=int(input( ))
+c=int(input( ))
+if a == b:
+    if a==C:
+        if c == b:
+            #a == b, a == c, c == b
+            print(3)
+if a != b:
+    if a == c:
+        if b != c:
+            #a != B, a == c, b != c
+            print(2)
+if a != b:
+    if a !=c:
+        if b != c:
+            #a != b, a != b, b != c 
+            print(0)
+
+6:
+x1 = int(input())   
+x2 = int(input())		
+y1 = int(input())	
+y2 = int(input())
+if x1==y1 or x2==y2:
+    print("YES")
+else:
+    print("NO")
+
+7:
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+if (x1+x2)%2==0 and (y1+y2)%2==0:
+    print("YES")
+elif (x1+x2)%2!=0 and (y1+y2)%2!=0:
+    print("YES")
+else:
+    print("NO")
+
+8:
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+if -1<=(x1-y1)<=1 and -1<=(x2-y2)<=1:
+    print("YES")
+else:
+    print("NO")
+
+9:
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+if (x1/y1)==(x2/y2):
+    print("YES")
+elif (x1+x2)==(y1+y2):
+    print("YES")
+else:
+    print("NO")
+
+10:
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+
+if x1==y1 or x2==y2:
+    print("YES")
+elif (x1/y1)==(x2/y2):
+    print("YES")
+elif  (x1+x2)==(y1+y2)  or (x1-x2)==(y1-y2):
+    print("YES")   
+else:
+    print("NO")
+
+11:
+x1 = int(input())
+x2 = int(input())
+y1 = int(input())
+y2 = int(input())
+if abs(x1-y1)==2 and abs(x2-y2)==1:
+    print("YES")
+elif abs(x1-y1)==1 and abs(x2-y2)==2:
+    print("YES")
+else:
+    print("NO")
+
+12:
+a = int(input())
+b = int(input())
+c = int(input())
+if a*b-c==a or a*b-c==b and a*b>c and c!=1:
+    print('YES')
+elif (a*b-c)%2==0 and a*b>c and c!=1:
+     print('YES')
+else:
+    print('NO')
+
+
+
+

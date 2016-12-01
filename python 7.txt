@@ -1,0 +1,46 @@
+1 .
+ raw_inp=input().split(' ')
+ n = int(raw_inp[0]); m = int(raw_inp[1])
+ line = [input() for i in range(n)]
+ mas = (' '.join(line)).split()
+ mas = [int(i) for i in mas]
+ print(((mas.index(max(mas)))//m), (mas.index(max(mas)))//n)
+ 
+ 2.
+ size = int(input())
+ matrix = [['.'] * size for i in range(size)]
+ for i in range(size):
+     matrix[i][i] = '*'
+     matrix[size // 2][i] = '*'
+     matrix[i][size // 2] = '*'
+     matrix[i][size - i - 1] = '*'
+ for row in matrix:
+     print(' '.join(row)) 
+ 
+ 4.
+ n = int(input())
+ matrix = [[abs(i - j) for j in range(n)] for i in range(n)]
+ for row in matrix:
+     print(' '.join([str(i) for i in row]))
+ 5.
+ def func(i,j,n):
+     if i+j+1==n: return 1
+     elif i+j+1>n: return 2
+     else: return 0
+         
+ n = int(input())
+ matrix = [[func(i,j,n) for j in range(n)] for i in range(n)]
+ for row in matrix:
+     print(' '.join([str(i) for i in row]))
+ 6.
+ 
+ def swap_colums(matrix, i, j):
+     for raw in range(len(matrix)):
+         matrix[raw][i], matrix[raw][j] = matrix[raw][j], matrix[raw][i]
+     return matrix
+ raw = input().split(); n=int(raw[0]); m=int(raw[1])
+ matrix = [input().split() for i in range(n)]
+ raw = input().split(); c1=int(raw[0]); c2=int(raw[1])
+ matrix = swap_colums(matrix, c1, c2)
+ for raw in matrix:
+     print(' '.join([str(i) for i in raw]))
