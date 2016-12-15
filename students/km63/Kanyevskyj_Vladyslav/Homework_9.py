@@ -202,6 +202,28 @@ for i in winners:
 В первой строке выведите количество языков, которые знаю все школьники. Начиная со второй строки - список таких языков. Затем - количество языков, которые знает хотя бы один школьник, на следующих строках - список таких языков. Языки нужно выводить в лексикографическом порядке, по одному на строке.
 
 """
+def inpute(count):
+    liste = set()
+    for i in range(count):
+        liste.add(input())
+    return (liste)
+liste = []
+languages = set()
+schools = set()
+count_of_schools = int(input())
+for j in range (count_of_schools):
+    count_of_languages = int(input())
+    liste.append(inpute(count_of_languages))
+for j in range (count_of_schools-1):
+    schools = schools | liste[j] & liste[j+1]
+for j in range (count_of_schools-1):
+    languages = languages | liste[j] | liste[j+1]
+print (len(schools))
+for i in range (len(schools)):
+    print (list(schools)[i])
+print (len(languages))
+for i in range (len(languages)):
+    print (list(languages)[i])
 """
 #
 #-----------------------------------------------------------
