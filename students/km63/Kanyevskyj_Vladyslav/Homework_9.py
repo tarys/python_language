@@ -187,6 +187,29 @@ for i in winners:
 Для каждого вопроса Беатрисы выведите ответ Августа на этот вопрос. После этого выведите через пробел, в порядке возрастания, все числа, которые мог загадать Август после ответа на все вопросы Беатрисы.
 
 """
+count=int(input())
+numbers=set()
+numbers_=set()
+
+for i in range(count):
+    numbers.add(str(i+1))
+    
+while True:
+    string=input()
+    if string=='HELP':
+        break
+    else:
+        numbers_=set(string.split())
+    if len(numbers-numbers_)>=len(numbers&numbers_):
+        print('NO')
+        numbers=numbers-numbers_
+    else:
+        print('YES')
+        numbers=numbers&numbers_
+
+for elements in sorted(numbers, key=int):
+    print(elements, end=' ')
+
 """
 #
 #-----------------------------------------------------------
